@@ -5,6 +5,12 @@
         "level": 10,
         "avatar": "images/pfp.png"
     },
+    "communityStats": {
+        "profiles": 1234,
+        "trophies": 8675309,
+        "games": 69420,
+        "platinums": 210459
+    },
     "games": [
         {
             "name": "Sample Game 1",
