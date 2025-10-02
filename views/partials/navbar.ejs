@@ -1,0 +1,121 @@
+<nav class="navbar bg-base-200 shadow-lg">
+
+    <div class="navbar-start flex items-center">
+        <div class="flex-none dropdown dropdown-start lg:hidden">
+            <button class="btn btn-ghost btn-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="oklch(97.807% 0.029 256.847)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-2 z-[1] p-2 shadow-lg bg-base-100 border-2 border-base-200">
+                <li><a href="/">Trophies</a></li>
+                <li><a href="/">Games</a></li>
+                <li><a href="/">Guides</a></li>
+                <% if (isLoggedIn) { %>
+                    <li><a href="/">My PSN</a></li>
+                <% } %>
+                <li>
+                    <a href="/">Community</a>
+                    <ul class="p-2">
+                        <li><a href="/">Leaderboards</a></li>
+                        <li><a href="/">Badges</a></li>
+                        <li><a href="/">Events</a></li>
+                        <li><a href="/">Forum</a></li>
+                        <li><a href="/">Discord</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <a href="/" class="btn btn-ghost flex items-center text-xl font-logo hidden sm:flex">
+            <img src="/images/logo.png" alt="Platinum Pursuit Logo" class="h-8 w-8 mr-2 rounded-full" />
+            Platinum Pursuit
+        </a>
+    </div>
+
+    <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+            <li><a href="/">Trophies</a></li>
+            <li><a href="/">Games</a></li>
+            <li><a href="/">Guides</a></li>
+            <% if (isLoggedIn) { %>
+                <li><a href="/">My PSN</a></li>
+            <% } %>
+            <li>
+                <details>
+                    <summary><a href="/">Community</a></summary>
+                    <ul class="p-2 z-[1] border-2 border-base-200">
+                        <li><a href="/">Leaderboards</a></li>
+                        <li><a href="/">Badges</a></li>
+                        <li><a href="/">Events</a></li>
+                        <li><a href="/">Forum</a></li>
+                        <li><a href="/">Discord</a></li>
+                    </ul>
+                </details>
+            </li>
+        </ul>
+    </div>
+
+    <div class="navbar-center flex sm:hidden">
+        <a href="/" class="btn btn-ghost flex items-center text-lg font-logo">
+            <img src="/images/logo.png" alt="Platinum Pursuit Logo" class="h-8 w-8 mr-2 rounded-full" />
+            Plat Pursuit
+        </a>
+    </div>
+
+    <div class="navbar-end flex items-center gap-0 sm:gap-2">
+        <form action="/" method="GET" class="join hidden sm:flex">
+            <select name="type" class="select select-sm join-item">
+                <option value="game">Game</option>
+                <option value="trophy">Trophy</option>
+                <option value="user">User</option>
+            </select>
+            <input type="text" name="query" placeholder="Search..." class="input input-sm join-item w-32 lg:w-32 xl:w-48" />
+            <button type="submit" class="btn btn-sm btn-primary join-item">Go</button>
+        </form>
+
+        <div class="dropdown dropdown-end sm:hidden">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-sm btn-circle">
+                <div class="w-15 rounded-full flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="oklch(97.807% 0.029 256.847)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                </div>
+            </div>
+            <div class="dropdown-content mt-2 z-[1] p-2 shadow-lg bg-base-100 border-2 border-base-200">
+                <form action="/" method="GET" class="join ">
+                    <select name="type" class="select select-sm join-item w-auto">
+                        <option value="game">Game</option>
+                        <option value="trophy">Trophy</option>
+                        <option value="user">User</option>
+                    </select>
+                    <input type="text" name="query" placeholder="Search..." class="input input-sm join-item w-32" />
+                    <button type="submit" class="btn btn-sm btn-primary join-item">Go</button>
+                </form>
+            </div>
+        </div>
+
+
+        <% if (isLoggedIn) { %>
+            <div class="dropdown dropdown-end">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle border-2 border-secondary avatar">
+                    <div class="w-15 rounded-full">
+                        <img alt="Profile Picture" src="<%= data.user.avatar || 'https://placehold.co/40' %>" />
+                    </div>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-2 z-[1] p-2 shadow-lg bg-base-100 border-2 border-base-200 w-32">
+                    <li><a href="/">Profile</a></li>
+                    <li><a href="/">Settings</a></li>
+                    <li><a href="/">Logout</a></li>
+                </ul>
+            </div>
+        <% } else { %>
+            <div class="dropdown dropdown-end">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                    <div class="w-15 rounded-full flex">
+                        <svg class="mx-auto my-1" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="oklch(97.807% 0.029 256.847)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    </div>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-2 z-[1] p-2 shadow-lg bg-base-100 border-2 border-base-200 w-32">
+                    <li><a href="/">Login</a></li>
+                    <li><a href="/">Register</a></li>
+                </ul>
+            </div>
+        <% } %>
+    </div>
+</nav>

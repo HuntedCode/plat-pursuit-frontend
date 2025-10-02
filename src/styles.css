@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@plugin "daisyui";
+
+@plugin "daisyui/theme" {
+  name: "plat-pursuit-dark";
+  default: true;
+  prefersdark: true;
+  color-scheme: "dark";
+  --color-base-100: oklch(0.280 0.016 252.4);
+  --color-base-200: oklch(23.26% 0.014 253.1);
+  --color-base-300: oklch(21.15% 0.012 254.09);
+  --color-base-content: oklch(97.807% 0.029 256.847);
+  --color-primary: oklch(86.078% 0.142 206.182);
+  --color-primary-content: oklch(17.226% 0.028 139.549);
+  --color-secondary: oklch(0.741 0.233 277.1);
+  --color-secondary-content: oklch(17.226% 0.028 139.549);
+  --color-accent: oklch(0.815 0.195 35.4);
+  --color-accent-content: oklch(17.226% 0.028 139.549);
+  --color-neutral: oklch(14% 0.005 285.823);
+  --color-neutral-content: oklch(92% 0.004 286.32);
+  --color-info: oklch(0.735 0.274 257.3);
+  --color-info-content: oklch(17.226% 0.028 139.549);
+  --color-success: oklch(86.171% 0.142 166.534);
+  --color-success-content: oklch(17.226% 0.028 139.549);
+  --color-warning: oklch(0.946 0.186 94.8);
+  --color-warning-content: oklch(17.226% 0.028 139.549);
+  --color-error: oklch(0.759 0.240 19.2);
+  --color-error-content: oklch(17.226% 0.028 139.549);
+  --radius-selector: 0.25rem;
+  --radius-field: 0.25rem;
+  --radius-box: 0.25rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 2px;
+  --depth: 1;
+  --noise: 0;
+}
+
+@layer base {
+    body {
+        font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    }
+    .font-logo {
+        font-family: 'Futura', 'Inter', ui-sans-serif, system-ui, sans-serif;
+    }
+
+}

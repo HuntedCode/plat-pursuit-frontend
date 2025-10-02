@@ -1,0 +1,17 @@
+{
+    "user": {
+        "name": "TestUser",
+        "trophiesEarned": 42,
+        "level": 10,
+        "avatar": "images/pfp.png"
+    },
+    "games": [
+        {
+            "name": "Sample Game 1",
+            "trophies": [
+                { "name": "First Win", "description": "Win your first match", "rarity": "Bronze" },
+                { "name": "Ultimate Champion", "description": "Win 100 matches", "rarity": "Platinum" }
+            ]
+        }
+    ]
+}
