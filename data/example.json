@@ -11,6 +11,87 @@
         "games": 69420,
         "platinums": 210459
     },
+    "featuredGames": [
+        {
+            "name": "Rocket League but very very very very very very very very very long",
+            "trophies": {
+                "bronze": 51,
+                "silver": 24,
+                "gold": 12,
+                "platinum": 1
+            },
+            "trophiesEarned": 14784,
+            "platform": "PS4",
+            "avgCompletion": 0.45,
+            "image": "images/rl.jpeg",
+            "slug": "/"
+        },
+        {
+            "name": "Minecraft: PlayStation 4 Edition",
+            "trophies": {
+                "bronze": 79,
+                "silver": 36,
+                "gold": 11,
+                "platinum": 1
+            },
+            "trophiesEarned": 20734,
+            "platform": "PS4",
+            "avgCompletion": 0.12,
+            "image": "images/mc.jpg",
+            "slug": "/"
+        },
+        {
+            "name": "Horizon Zero Dawn",
+            "trophies": {
+                "bronze": 65,
+                "silver": 11,
+                "gold": 2,
+                "platinum": 1
+            },
+            "trophiesEarned": 12641,
+            "platform": "PS4",
+            "avgCompletion": 0.65,
+            "image": "images/hzd.jpg",
+            "slug": "/"
+        },
+        {
+            "name": "Marvel's Spider-Man",
+            "trophies": {
+                "bronze": 54,
+                "silver": 14,
+                "gold": 5,
+                "platinum": 1
+            },
+            "trophiesEarned": 17226,
+            "platform": "PS4",
+            "avgCompletion": 0.89,
+            "image": "images/sm.png",
+            "slug": "/"
+        },
+        {
+            "name": "ASTRO's PLAYROOM",
+            "trophies": {
+                "bronze": 31,
+                "silver": 14,
+                "gold": 5,
+                "platinum": 1
+            },
+            "trophiesEarned": 16943,
+            "platform": "PS5",
+            "avgCompletion": 0.65,
+            "image": "images/ab.jpg",
+            "slug": "/"
+        }
+    ],
+    "featuredUser": {
+        "name": "Evan's Balloon",
+        "avatar": "images/pfp.png",
+        "platinums": 42069,
+        "trophiesEarnedThisWeek": 4900,
+        "guidesWritten": 5,
+        "bio": "Gen 1 is unplayable garbage tbh",
+        "backgroundImage": "images/hzd.jpg"
+    },
     "games": [
         {
             "name": "Sample Game 1",

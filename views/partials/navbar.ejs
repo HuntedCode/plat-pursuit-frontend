@@ -93,8 +93,8 @@
 
         <% if (isLoggedIn) { %>
             <div class="dropdown dropdown-end">
-                <div tabindex="0" role="button" class="btn btn-ghost btn-circle border-2 border-secondary avatar">
-                    <div class="w-15 rounded-full">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                    <div class="w-15 rounded-full ring ring-secondary ring-offset-base-100 ring-offset-2">
                         <img alt="Profile Picture" src="<%= data.user.avatar || 'https://placehold.co/40' %>" />
                     </div>
                 </div>
@@ -107,7 +107,7 @@
         <% } else { %>
             <div class="dropdown dropdown-end">
                 <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
-                    <div class="w-15 rounded-full flex">
+                    <div class="w-15 rounded-full flex ring ring-secondary ring-offset-base-100 ring-offset-2">
                         <svg class="mx-auto my-1" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="oklch(97.807% 0.029 256.847)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
                     </div>
                 </div>
