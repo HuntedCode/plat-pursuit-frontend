@@ -37,7 +37,7 @@
                 const card = document.createElement('div');
                 card.className = `card bg-base-100 shadow-md border-2 border-base-300 transition duration-300 hover:shadow-lg hover:shadow-${event.color || 'primary'} hover:bg-base-300 group w-full`;
                 card.innerHTML = `
-                    <div class="card-body flex flex-row items-center p-3 overflow-hidden items-center w-full">
+                    <div class="card-body flex flex-row items-center gap-4 p-3 overflow-hidden w-full">
                         <div class="flex-shrink-0 mr-3">
                             <div class="badge badge-${event.color || 'neutral'} badge-lg flex flex-col items-center p-3 min-h-16 justify-center">
                                 <span class="text-xs font-bold">${new Date(event.date).toLocaleString('default', { month: 'short' })}</span>
@@ -45,7 +45,7 @@
                             </div>
                         </div>
 
-                        <div class="space-y-1 overflow-hidden">
+                        <div class="space-y-1 overflow-hidden text-start">
                             <h4 class="card-title text-base w-full line-clamp-1">${event.title}</h4>
                             <p class="text-xs text-base-content/70 truncate">${event.time || 'All Day'}</p>
                             <div class="overflow-hidden max-h-0 group-hover:max-h-32 transition-max-height duration-300 ease-in-out">
