@@ -39,7 +39,7 @@
                 card.innerHTML = `
                     <div class="card-body flex flex-row items-center gap-4 p-3 overflow-hidden w-full">
                         <div class="flex-shrink-0 mr-3">
-                            <div class="badge badge-${event.color || 'neutral'} badge-lg flex flex-col items-center p-3 min-h-16 justify-center">
+                            <div class="badge badge-${event.color || 'neutral'} badge-lg border-2 border-base-300 flex flex-col items-center p-3 min-h-16 justify-center">
                                 <span class="text-xs font-bold">${new Date(event.date).toLocaleString('default', { month: 'short' })}</span>
                                 <span class="text-lg font-bold">${new Date(event.date).getDate()}</span>
                             </div>
