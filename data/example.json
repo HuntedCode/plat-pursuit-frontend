@@ -92,13 +92,130 @@
         "bio": "Gen 1 is unplayable garbage tbh",
         "backgroundImage": "images/hzd.jpg"
     },
-    "games": [
+    "latestTrophies": [
         {
-            "name": "Sample Game 1",
-            "trophies": [
-                { "name": "First Win", "description": "Win your first match", "rarity": "Bronze" },
-                { "name": "Ultimate Champion", "description": "Win 100 matches", "rarity": "Platinum" }
-            ]
+            "image": "https://placehold.co/500",
+            "user": "Jammothy", 
+            "trophy": "All I Do Is Win", 
+            "game": "Stroke The Chicken", 
+            "time": "1h ago"
+        },
+        {
+            "image": "https://placehold.co/500",
+            "user": "PlatPursuit", 
+            "trophy": "GOOOOOOOOAL!", 
+            "game": "Rematch", 
+            "time": "2h ago"
+        },
+        {
+            "image": "https://placehold.co/500",
+            "user": "Junks", 
+            "trophy": "10k Hours in 6 Months?!", 
+            "game": "Minecraft", 
+            "time": "3h ago"
+        },
+                {
+            "image": "https://placehold.co/500",
+            "user": "Jammothy", 
+            "trophy": "All I Do Is Win", 
+            "game": "Stroke The Chicken", 
+            "time": "1h ago"
+        },
+        {
+            "image": "https://placehold.co/500",
+            "user": "PlatPursuit", 
+            "trophy": "GOOOOOOOOAL!", 
+            "game": "Rematch", 
+            "time": "2h ago"
+        },
+        {
+            "image": "https://placehold.co/500",
+            "user": "Junks", 
+            "trophy": "10k Hours in 6 Months?!", 
+            "game": "Minecraft", 
+            "time": "3h ago"
+        }
+    ],
+    "recentGuides": [
+        {
+            "image": "https://placehold.co/500",
+            "title": "Why Gen 1 Is Actually Garbage", 
+            "author": "Evan's Balloon", 
+            "game": "Pokemon?", 
+            "date": "Just Now"
+        },
+        {
+            "image": "https://placehold.co/500",
+            "title": "How To Kiss Every NPC", 
+            "author": "Venjamin", 
+            "game": "Every Game", 
+            "date": "Yesterday"
+        },
+        {
+            "image": "https://placehold.co/500",
+            "title": "Full Game Guide", 
+            "author": "Hunted", 
+            "game": "Stroke The DikDik", 
+            "date": "2 Weeks Ago"
+        },
+                {
+            "image": "https://placehold.co/500",
+            "title": "Why Gen 1 Is Actually Garbage", 
+            "author": "Evan's Balloon", 
+            "game": "Pokemon?", 
+            "date": "Just Now"
+        },
+        {
+            "image": "https://placehold.co/500",
+            "title": "How To Kiss Every NPC", 
+            "author": "Venjamin", 
+            "game": "Every Game", 
+            "date": "Yesterday"
+        },
+        {
+            "image": "https://placehold.co/500",
+            "title": "Full Game Guide", 
+            "author": "Hunted", 
+            "game": "Stroke The DikDik", 
+            "date": "2 Weeks Ago"
+        }
+    ],
+    "playingNow": [
+        {
+            "image": "https://placehold.co/500",
+            "title": "Rocket League",
+            "players": 2500,
+            "avgCompletion": 0.42
+        },
+        {
+            "image": "https://placehold.co/500",
+            "title": "Stroke The DikDik",
+            "players": 5000000,
+            "avgCompletion": 0.90
+        },
+        {
+            "image": "https://placehold.co/500",
+            "title": "Bugsnax",
+            "players": 69420,
+            "avgCompletion": 0.30
+        },
+                {
+            "image": "https://placehold.co/500",
+            "title": "Rocket League",
+            "players": 2500,
+            "avgCompletion": 0.42
+        },
+        {
+            "image": "https://placehold.co/500",
+            "title": "Stroke The DikDik",
+            "players": 5000000,
+            "avgCompletion": 0.90
+        },
+        {
+            "image": "https://placehold.co/500",
+            "title": "Bugsnax",
+            "players": 69420,
+            "avgCompletion": 0.30
         }
     ]
 }

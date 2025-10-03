@@ -1,32 +1,40 @@
-<section class="card shadow-lg w-full bg-base-200 border-2 border-base-300 mx-auto max-w-lg transition duration-300 hover:shadow-accent hover:border-accent hover:bg-base-300 group">
-    <div class="card-body items-center text-center">
-        <span class="badge badge-primary badge-lg border-2 border-base-300 shadow-sm shadow-primary place-self-end mb-2 animate-pulse">Pursuer of the Week</span>
-        <div class="avatar mb-4 transition duration-300 group-hover:scale-105">
-            <div class="w-24 rounded-full ring ring-secondary ring-offset-base-100 ring-offset-2">
-                <img src="<%= data.featuredUser.avatar %>" alt="<%= data.featuredUser.name %>'s avatar" />
+<div class="sticky top-2">
+    <section class="card shadow-lg w-full bg-base-200 border-2 border-base-300 mx-auto max-w-lg mb-6 transition duration-300 hover:shadow-accent hover:border-accent hover:bg-base-300 group">
+        <div class="card-body items-center text-center">
+            <span class="badge badge-primary badge-lg border-2 border-base-300 shadow-sm shadow-primary place-self-end mb-2 animate-pulse">Pursuer of the Week</span>
+            <div class="avatar mb-4 transition duration-300 group-hover:scale-105">
+                <div class="w-24 rounded-full ring ring-secondary ring-offset-base-100 ring-offset-2">
+                    <img src="<%= data.featuredUser.avatar %>" alt="<%= data.featuredUser.name %>'s avatar" />
+                </div>
             </div>
-        </div>
-        <h2 class="card-title text-base md:text-lg">Plat Pursurer of the Week:</h2>
-        <h2 class="card-title text-xl sm:text-2xl md:text-3xl lg:text-2xl xl:text-4xl font-bold text-primary truncate"><%= data.featuredUser.name %></h2>
-        <p class="text-sm italic text-base-content/70 line-clamp-2">"<%= data.featuredUser.bio %>"</p>
+            <h2 class="card-title text-base md:text-lg">Plat Pursuer of the Week:</h2>
+            <h2 class="card-title text-xl sm:text-2xl md:text-3xl lg:text-2xl xl:text-4xl font-bold text-primary truncate"><%= data.featuredUser.name %></h2>
+            <p class="text-sm italic text-base-content/70 line-clamp-2">"<%= data.featuredUser.bio %>"</p>
 
-        <div class="stats stats-vertical md:stats-horizontal lg:stats-vertical 2xl:stats-horizontal mt-4">
-            <div class="stat">
-                <div class="stat-title">Platinums</div>
-                <div class="stat-value text-primary hover:scale-105"><%= new Intl.NumberFormat('en-US').format(data.featuredUser.platinums) %></div>
+            <div class="stats stats-vertical md:stats-horizontal lg:stats-vertical 2xl:stats-horizontal mt-4">
+                <div class="stat">
+                    <div class="stat-title">Platinums</div>
+                    <div class="stat-value text-primary hover:scale-105"><%= new Intl.NumberFormat('en-US').format(data.featuredUser.platinums) %></div>
+                </div>
+                <div class="stat">
+                    <div class="stat-title">Trophies Earned This Week</div>
+                    <div class="stat-value text-secondary hover:scale-105"><%= new Intl.NumberFormat('en-US').format(data.featuredUser.trophiesEarnedThisWeek) %></div>
+                </div>
+                <div class="stat">
+                    <div class="stat-title">Guides Written</div>
+                    <div class="stat-value text-accent hover:scale-105"><%= new Intl.NumberFormat('en-US').format(data.featuredUser.guidesWritten) %></div>
+                </div>
             </div>
-            <div class="stat">
-                <div class="stat-title">Trophies Earned This Week</div>
-                <div class="stat-value text-secondary hover:scale-105"><%= new Intl.NumberFormat('en-US').format(data.featuredUser.trophiesEarnedThisWeek) %></div>
-            </div>
-            <div class="stat">
-                <div class="stat-title">Guides Written</div>
-                <div class="stat-value text-accent hover:scale-105"><%= new Intl.NumberFormat('en-US').format(data.featuredUser.guidesWritten) %></div>
+            <div class="card-actions justify-center mt-4">
+                <a href="/" class="btn btn-secondary">View Profile</a>
+                <a href="/" class="btn btn-ghost"><%= data.featuredUser.name %>'s Guides</a>
             </div>
         </div>
-        <div class="card-actions justify-center mt-4">
-            <a href="/" class="btn btn-secondary">View Profile</a>
-            <a href="/" class="btn btn-ghost"><%= data.featuredUser.name %>'s Guides</a>
+    </section>
+
+    <section class="card shadow-lg w-full bg-base-200 border-2 border-base-300 mx-auto max-w-lg transition duration-300 hover:shadow-accent hover:border-accent hover:bg-base-300 group">
+        <div class="card-body items-center text-center">
+
         </div>
-    </div>
-</section>
+    </section>
+</div>
