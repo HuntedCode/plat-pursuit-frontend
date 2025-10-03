@@ -2063,6 +2063,16 @@
     --btn-color: var(--color-secondary);
     --btn-fg: var(--color-secondary-content);
   }
+  .input-primary {
+    &, &:focus, &:focus-within {
+      --input-color: var(--color-primary);
+    }
+  }
+  .select-primary {
+    &, &:focus, &:focus-within {
+      --input-color: var(--color-primary);
+    }
+  }
   .group-focus-within\:translate-y-0 {
     &:is(:where(.group):focus-within *) {
       --tw-translate-y: calc(var(--spacing) * 0);
