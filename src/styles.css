@@ -1,6 +1,8 @@
 @import "tailwindcss";
 
-@plugin "daisyui";
+@plugin "daisyui"{
+  themes: plat-pursuit-dark --default --prefersdark;
+};
 
 @plugin "daisyui/theme" {
   name: "plat-pursuit-dark";
@@ -49,28 +51,4 @@
         font-family: 'Futura', 'Inter', ui-sans-serif, system-ui, sans-serif;
     }
 
-}
-
-@layer components {
-  .fc {  /* FullCalendar root */
-    @apply text-base-content border-2 border-base-300;
-  }
-  .fc-col-header { /* Day of the week header */
-    @apply bg-base-100;
-}
-  .fc-daygrid-day {  /* Day cells */
-    @apply bg-base-100 border border-base-200;
-  }
-  .fc-event {  /* Events */
-    @apply rounded-box text-base-content px-1 py-0.5;
-  }
-  .fc-header-toolbar {  /* Header */
-    @apply mb-2;
-  }
-  .fc-button {  /* Nav buttons */
-    @apply btn btn-sm btn-ghost;
-  }
-  .fc-day-today {  /* Today highlight */
-    @apply bg-primary/10;
-  }
 }

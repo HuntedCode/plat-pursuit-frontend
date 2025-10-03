@@ -96,42 +96,48 @@
         {
             "image": "https://placehold.co/500",
             "user": "Jammothy", 
-            "trophy": "All I Do Is Win", 
+            "trophy": "All I Do Is Win",
+            "type": "Bronze",
             "game": "Stroke The Chicken", 
             "time": "1h ago"
         },
         {
-            "image": "https://placehold.co/500",
+            "image": "https://placehold.co/500/orange/white",
             "user": "PlatPursuit", 
-            "trophy": "GOOOOOOOOAL!", 
+            "trophy": "GOOOOOOOOAL!",
+            "type": "Silver", 
             "game": "Rematch", 
             "time": "2h ago"
         },
         {
-            "image": "https://placehold.co/500",
+            "image": "https://placehold.co/500/blue/white",
             "user": "Junks", 
             "trophy": "10k Hours in 6 Months?!", 
-            "game": "Minecraft", 
+            "game": "Minecraft",
+            "type": "Gold", 
             "time": "3h ago"
         },
                 {
-            "image": "https://placehold.co/500",
+            "image": "https://placehold.co/500/pink/black",
             "user": "Jammothy", 
-            "trophy": "All I Do Is Win", 
-            "game": "Stroke The Chicken", 
+            "trophy": "All I Do Is Win",
+            "type": "Silver",
+            "game": "Stroke The Chicken",
             "time": "1h ago"
         },
         {
-            "image": "https://placehold.co/500",
+            "image": "https://placehold.co/500/red/white",
             "user": "PlatPursuit", 
-            "trophy": "GOOOOOOOOAL!", 
+            "trophy": "GOOOOOOOOAL!",
+            "type": "Platinum",
             "game": "Rematch", 
             "time": "2h ago"
         },
         {
-            "image": "https://placehold.co/500",
+            "image": "https://placehold.co/500/purple/white",
             "user": "Junks", 
             "trophy": "10k Hours in 6 Months?!", 
+            "type": "Bronze",
             "game": "Minecraft", 
             "time": "3h ago"
         }
