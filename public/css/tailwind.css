@@ -2102,6 +2102,13 @@
       }
     }
   }
+  .group-hover\:border-primary {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        border-color: var(--color-primary);
+      }
+    }
+  }
   .focus-within\:border-secondary {
     &:focus-within {
       border-color: var(--color-secondary);

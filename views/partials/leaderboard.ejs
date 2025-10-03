@@ -6,8 +6,8 @@
             <% items.forEach(function(item) { %>
                 <div class="card bg-base-100 shadow-xl border-2 border-base-300 transition duration-300 hover:shadow-lg hover:border-primary hover:shadow-primary">
                     <div class="card-body flex flex-row items-center p-4 group">
-                        <figure class="flex-shrink-0 mr-4 transition duration-300 group-hover:scale-105">
-                            <img src="<%= item.image %>" alt="<%= item.alt || 'Item image' %>" class="w-16 h-16 rounded-lg object-cover" loading="lazy" />
+                        <figure class="flex-shrink-0 mr-4 rounded-lg border-2 border-base-300 transition duration-300 group-hover:scale-105 group-hover:border-primary">
+                            <img src="<%= item.image %>" alt="<%= item.alt || 'Item image' %>" class="w-16 h-16 object-cover" loading="lazy" />
                         </figure>
 
                         <div class="flex-grow space-y-1 truncate">
