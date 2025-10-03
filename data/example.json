@@ -217,5 +217,45 @@
             "players": 69420,
             "avgCompletion": 0.30
         }
+    ],
+    "upcomingEvents": [
+        {
+            "title": "Jam Plays Spooky!",
+            "date": "2025-10-10",
+            "color": "secondary",
+            "description": "Jam puts on his bravest face for the spookiest game around... Costume Quest!",
+            "time": "12pm - 4pm EDT"
+        },
+        {
+            "title": "Trick or Treat!",
+            "date": "2025-10-25",
+            "end": "2025-10-31",
+            "color": "accent",
+            "description": "Earn as many plats as you can! Winner gets treats, losers get tricked!",
+            "time": "All day"
+        },
+        {
+            "title": "Community Day #5",
+            "date": "2025-11-15",
+            "end": "2025-11-16",
+            "description": "Join the hunt to break our single day plat record! Every plat helps!",
+            "time": "08:30pm - 08:29pm EDT"
+        },
+        {
+            "title": "Our super incredible very long and confusing but awesome, amazing event!",
+            "date": "2025-11-14",
+            "end": "2025-10-31",
+            "color": "primary",
+            "description": "You know what this means gamers! It's time for us to have a super, mega, awesome, amazing event that you and all of your friends are NOT invited to - but your least favorite person is! That sucks doesn't it? Think this description is long enough? Probably.",
+            "time": "It literally never ends!"
+        },
+        {
+            "title": "Christmas",
+            "date": "2025-12-25",
+            "end": "2025-11-16",
+            "color": "accent",
+            "description": "Ho ho ho...",
+            "time": "If you've been good this year: 06:32am EDT"
+        }
     ]
 }

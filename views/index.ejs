@@ -158,7 +158,10 @@
         <%- include('partials/leaderboard', { title: 'Playing Now', items: data.playingNow }) %>
     </div>
     <aside class="lg:col-span-1">
-        <%- include('partials/user-highlight') %>
+        <div class="sticky top-2">
+            <%- include('partials/user-highlight') %>
+            <%- include('partials/events-list', { events: data.upcomingEvents, pageSize: 3 }) %>
+        </div>
     </aside>
 </div>
 
