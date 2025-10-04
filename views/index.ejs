@@ -1,28 +1,25 @@
 <!-- Breadcrumb -->
  <%- include('partials/breadcrumb', { items: [{ text: 'Home', url: '/' }, { text: 'Dashboard' }] }) %>
 
-<div class="space-y-8">
-    
-<!-- Stats -->
-<%- include('partials/index/community-stats', { items: data.communityStats }) %>
+<div class="space-y-8">    
+    <!-- Stats -->
+    <%- include('partials/index/community-stats', { items: data.communityStats }) %>
 
-<!-- Featured -->
-<%- include('partials/index/featuredGames', { items: data.featuredGames }) %>
+    <!-- Featured -->
+    <%- include('partials/index/featuredGames', { items: data.featuredGames }) %>
 
-<!-- Lower Content -->
-<div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-    <div class="lg:col-span-2 space-y-8">
-        <%- include('partials/index/latest-trophies', { items: data.latestTrophies }) %>
-        <%- include('partials/index/recent-guides', { items: data.recentGuides }) %>
-        <%- include('partials/index/playing-now', { items: data.playingNow }) %>
-    </div>
-    <aside class="lg:col-span-1">
-        <div class="sticky top-2 mb-8">
-            <%- include('partials/index/user-highlight') %>
-            <%- include('partials/index/events-list', { events: data.upcomingEvents, pageSize: 3 }) %>
+    <!-- Lower Content -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div class="lg:col-span-2 space-y-8">
+            <%- include('partials/index/latest-trophies', { items: data.latestTrophies }) %>
+            <%- include('partials/index/recent-guides', { items: data.recentGuides }) %>
+            <%- include('partials/index/playing-now', { items: data.playingNow }) %>
         </div>
-    </aside>
-</div>
-
-<!-- Leaderboards -->
+        <aside class="lg:col-span-1">
+            <div class="sticky top-2 mb-8">
+                <%- include('partials/index/user-highlight') %>
+                <%- include('partials/index/events-list', { events: data.upcomingEvents, pageSize: 3 }) %>
+            </div>
+        </aside>
+    </div>
 </div>

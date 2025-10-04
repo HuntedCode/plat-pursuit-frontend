@@ -9,14 +9,18 @@
                         <div class="aspect-video bg-cover bg-center transition-transform duration-300 group-hover:scale-105 group-focus-within:scale-105 w-full h-full" style="background-image: url('<%= game.image %>');">
                             <!-- Info Card -->
                             <div class="absolute bottom-0 left-0 right-0 bg-base-100/90 bg-opacity-50 text-base-content shadow-lg border-t-2 border-base-200 px-4 py-2 transform translate-y-full transition-transform duration-300 hover:bg-base-300/90 ease-in-out group-hover:translate-y-0 group-focus-within:translate-y-0">
-                                <h3 class="text-2xl font-bold mb-2 text-center truncate"><%= game.name %></h3>
+                                <h3 class="text-lg font-bold mb-2 text-center truncate"><%= game.name %></h3>
                                 <div class="flex flex-col items-center">
-                                    <div class="flex flex-row mb-2">
-                                        <p class="text-xs hover:scale-105">Trophies Earned: <span class="text-secondary font-bold"><%= new Intl.NumberFormat('en-US').format(game.trophiesEarned) %></span></p>
-                                        <div class="divider divider-horizontal mx-0"></div>
-                                        <p class="text-xs hover:scale-105">Platform: <span class="text-accent font-bold"><%= game.platform %></span></p>
-                                        <div class="divider divider-horizontal mx-0"></div>
-                                        <p class="text-xs hover:scale-105">Avg. Completion: <span class="text-primary font-bold"><%= game.avgCompletion * 100 %>%</span></p>
+                                    <div class="flex flex-col mb-2">
+                                        <div class="flex flex-row mb-2">
+                                            <p class="text-xs hover:scale-105">Trophies Earned: <span class="text-secondary font-bold"><%= new Intl.NumberFormat('en-US').format(game.trophiesEarned) %></span></p>
+                                            <div class="divider divider-horizontal mx-0"></div>
+                                            <p class="text-xs hover:scale-105">Platform: <span class="text-accent font-bold"><%= game.platform %></span></p>
+                                        </div>
+                                        <div class="flex flex-col items-center gap-0 w-full">
+                                            <progress class="progress <% if (game.avgCompletion <= 0.33) { %>progress-error<% } else if (game.avgCompletion < 0.66) { %>progress-warning<% } else { %>progress-success<% } %> w-full" value="<%= game.avgCompletion * 100 %>" max="100"></progress>
+                                            <span class="text-xs xl:text-sm">Avg. Completion: <%= game.avgCompletion * 100 %>%</span>
+                                        </div>
                                     </div>
                                     <div class="flex flex-col gap-2 mb-2">
                                         <div class="flex flex-row">
