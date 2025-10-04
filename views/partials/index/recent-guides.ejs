@@ -1,19 +1,19 @@
 <section class="card shadow-lg w-full bg-base-200 border-2 border-base-300 w-full transition duration-300 hover:shadow-accent hover:border-accent hover:bg-base-300 mb-8">
     <div class="card-body">
-        <h2 class="card-title text-2xl font-bold place-self-center">Recent Guides</h2>
+        <h2 class="card-title text-2xl sm:text-3xl lg:text-4xl font-bold place-self-center">Recent Guides</h2>
         <div class="divider mt-0"></div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <% items.forEach(function(item) { %>
-                <div class="card bg-base-100 shadow-xl border-2 border-base-300 transition duration-300 hover:shadow-lg hover:border-secondary hover:shadow-secondary">
-                    <div class="card-body flex flex-row items-center p-4 group">
+                <div class="card bg-base-100 shadow-xl border-2 border-base-300 transition duration-300 hover:shadow-lg hover:border-secondary hover:shadow-secondary cursor-pointer" onclick="document.location='<%= item.slug %>'">
+                    <div class="card-body flex flex-row items-center p-4 overflow-x-hidden group">
                         <figure class="flex-shrink-0 mr-4 rounded-lg border-2 border-base-300 transition duration-300 group-hover:scale-105 group-hover:border-secondary">
-                            <img src="<%= item.image %>" alt="<%= item.alt || 'Item image' %>" class="w-16 h-16 object-cover group-hover:scale-105" loading="lazy" />
+                            <img src="<%= item.image %>" alt="<%= item.alt || 'Item image' %>" class="w-12 h-12 xl:w-16 xl:h-16 object-cover group-hover:scale-105" loading="lazy" />
                         </figure>
 
-                        <div class="flex-grow space-y-1 truncate">
-                            <h3 class="card-title text-lg truncate"><%= item.title %></h3>
-                            <p class="text-sm text-base-content/70 mb-2">By <a href="/" class="link link-hover text-primary"><%= item.author %></a> for <a href="/" class="link link-hover text-accent"><%= item.game %></a></p>
-                            <span class="badge badge-outline badge-sm"><%= item.date %></span>
+                        <div class="flex-grow space-y-1">
+                            <h3 class="card-title text-sm md:text-base xl:text-lg line-clamp-2"><%= item.title %></h3>
+                            <p class="text-xs xl:text-sm text-base-content/70 mb-2 line-clamp-2">By <a href="/" class="link link-hover text-primary"><%= item.author %></a> for <a href="/" class="link link-hover text-accent"><%= item.game %></a></p>
+                            <span class="badge badge-outline badge-xs xl:badge-sm"><%= item.date %></span>
                         </div>
                     </div>
                 </div>

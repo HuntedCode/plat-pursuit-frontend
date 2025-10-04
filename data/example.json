@@ -99,7 +99,8 @@
             "trophy": "All I Do Is Win",
             "type": "Bronze",
             "game": "Stroke The Chicken", 
-            "time": "1h ago"
+            "time": "1h ago",
+            "slug": "/"
         },
         {
             "image": "https://placehold.co/500/orange/white",
@@ -107,7 +108,8 @@
             "trophy": "GOOOOOOOOAL!",
             "type": "Silver", 
             "game": "Rematch", 
-            "time": "2h ago"
+            "time": "2h ago",
+            "slug": "/"
         },
         {
             "image": "https://placehold.co/500/blue/white",
@@ -115,15 +117,17 @@
             "trophy": "10k Hours in 6 Months?!", 
             "game": "Minecraft",
             "type": "Gold", 
-            "time": "3h ago"
+            "time": "3h ago",
+            "slug": "/"
         },
                 {
             "image": "https://placehold.co/500/pink/black",
             "user": "Jammothy", 
-            "trophy": "All I Do Is Win",
+            "trophy": "This is a very very very very very extremely long trophy!",
             "type": "Silver",
             "game": "Stroke The Chicken",
-            "time": "1h ago"
+            "time": "1h ago",
+            "slug": "/"
         },
         {
             "image": "https://placehold.co/500/red/white",
@@ -131,15 +135,17 @@
             "trophy": "GOOOOOOOOAL!",
             "type": "Platinum",
             "game": "Rematch", 
-            "time": "2h ago"
+            "time": "2h ago",
+            "slug": "/"
         },
         {
             "image": "https://placehold.co/500/purple/white",
             "user": "Junks", 
             "trophy": "10k Hours in 6 Months?!", 
             "type": "Bronze",
-            "game": "Minecraft", 
-            "time": "3h ago"
+            "game": "The longestest and most beautiful amazing game ever!", 
+            "time": "3h ago",
+            "slug": "/"
         }
     ],
     "recentGuides": [
@@ -147,43 +153,49 @@
             "image": "https://placehold.co/500",
             "title": "Why Gen 1 Is Actually Garbage", 
             "author": "Evan's Balloon", 
-            "game": "Pokemon?", 
-            "date": "Just Now"
+            "game": "The longestest and most beautiful amazing game ever!", 
+            "date": "Just Now",
+            "slug": "/"
         },
         {
             "image": "https://placehold.co/500",
             "title": "How To Kiss Every NPC", 
             "author": "Venjamin", 
             "game": "Every Game", 
-            "date": "Yesterday"
+            "date": "Yesterday",
+            "slug": "/"
         },
         {
             "image": "https://placehold.co/500",
             "title": "Full Game Guide", 
             "author": "Hunted", 
             "game": "Stroke The DikDik", 
-            "date": "2 Weeks Ago"
+            "date": "2 Weeks Ago",
+            "slug": "/"
         },
                 {
             "image": "https://placehold.co/500",
             "title": "Why Gen 1 Is Actually Garbage", 
             "author": "Evan's Balloon", 
             "game": "Pokemon?", 
-            "date": "Just Now"
+            "date": "Just Now",
+            "slug": "/"
         },
         {
             "image": "https://placehold.co/500",
             "title": "How To Kiss Every NPC", 
             "author": "Venjamin", 
             "game": "Every Game", 
-            "date": "Yesterday"
+            "date": "Yesterday",
+            "slug": "/"
         },
         {
             "image": "https://placehold.co/500",
             "title": "Full Game Guide", 
             "author": "Hunted", 
             "game": "Stroke The DikDik", 
-            "date": "2 Weeks Ago"
+            "date": "2 Weeks Ago",
+            "slug": "/"
         }
     ],
     "playingNow": [
@@ -191,37 +203,43 @@
             "image": "https://placehold.co/500",
             "title": "Rocket League",
             "players": 2500,
-            "avgCompletion": 0.42
+            "avgCompletion": 0.42,
+            "slug": "/"
         },
         {
             "image": "https://placehold.co/500",
             "title": "Stroke The DikDik",
             "players": 5000000,
-            "avgCompletion": 0.90
+            "avgCompletion": 0.90,
+            "slug": "/"
         },
         {
             "image": "https://placehold.co/500",
             "title": "Bugsnax",
             "players": 69420,
-            "avgCompletion": 0.30
+            "avgCompletion": 0.30,
+            "slug": "/"
         },
                 {
             "image": "https://placehold.co/500",
             "title": "Rocket League",
             "players": 2500,
-            "avgCompletion": 0.42
+            "avgCompletion": 0.42,
+            "slug": "/"
         },
         {
             "image": "https://placehold.co/500",
             "title": "Stroke The DikDik",
             "players": 5000000,
-            "avgCompletion": 0.90
+            "avgCompletion": 0.90,
+            "slug": "/"
         },
         {
             "image": "https://placehold.co/500",
             "title": "Bugsnax",
             "players": 69420,
-            "avgCompletion": 0.30
+            "avgCompletion": 0.30,
+            "slug": "/"
         }
     ],
     "upcomingEvents": [
@@ -230,38 +248,40 @@
             "date": "2025-10-10",
             "color": "secondary",
             "description": "Jam puts on his bravest face for the spookiest game around... Costume Quest!",
-            "time": "12pm - 4pm EDT"
+            "time": "12pm - 4pm EDT",
+            "slug": "/"
         },
         {
             "title": "Trick or Treat!",
             "date": "2025-10-25",
-            "end": "2025-10-31",
             "color": "accent",
             "description": "Earn as many plats as you can! Winner gets treats, losers get tricked!",
-            "time": "All day"
+            "time": "All day",
+            "slug": "/"
         },
         {
             "title": "Community Day #5",
             "date": "2025-11-15",
             "end": "2025-11-16",
             "description": "Join the hunt to break our single day plat record! Every plat helps!",
-            "time": "08:30pm - 08:29pm EDT"
+            "time": "08:30pm - 08:29pm EDT",
+            "slug": "/"
         },
         {
             "title": "Our super incredible very long and confusing but awesome, amazing event!",
             "date": "2025-11-14",
-            "end": "2025-10-31",
             "color": "primary",
             "description": "You know what this means gamers! It's time for us to have a super, mega, awesome, amazing event that you and all of your friends are NOT invited to - but your least favorite person is! That sucks doesn't it? Think this description is long enough? Probably.",
-            "time": "It literally never ends!"
+            "time": "It literally never ends!",
+            "slug": "/"
         },
         {
             "title": "Christmas",
             "date": "2025-12-25",
-            "end": "2025-11-16",
             "color": "accent",
             "description": "Ho ho ho...",
-            "time": "If you've been good this year: 06:32am EDT"
+            "time": "If you've been good this year: 06:32am EDT",
+            "slug": "/"
         }
     ]
 }
