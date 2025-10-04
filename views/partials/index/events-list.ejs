@@ -21,7 +21,7 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', () => {
-        const events = <%- JSON.stringify(events) %>;
+        const events = <%- JSON.stringify(items) %>;
         const pageSize = <%= pageSize %>;
         const totalPages = Math.ceil(events.length / pageSize);
         let currentPage = 1;
