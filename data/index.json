@@ -1,10 +1,4 @@
 {
-    "user": {
-        "name": "TestUser",
-        "trophiesEarned": 42,
-        "level": 10,
-        "avatar": "images/pfp.png"
-    },
     "communityStats": {
         "profiles": 1234,
         "trophies": 8675309,
