@@ -78,12 +78,12 @@
         }
     ],
     "featuredUser": {
-        "name": "Evan's Balloon",
+        "name": "CherryDude",
         "avatar": "images/pfp.png",
         "platinums": 42069,
         "trophiesEarnedThisWeek": 4900,
         "guidesWritten": 5,
-        "bio": "Gen 1 is unplayable garbage tbh",
+        "bio": "You want to know my name? My name is...",
         "backgroundImage": "images/hzd.jpg"
     },
     "latestTrophies": [
@@ -145,8 +145,8 @@
     "recentGuides": [
         {
             "image": "https://placehold.co/500",
-            "title": "Why Gen 1 Is Actually Garbage", 
-            "author": "Evan's Balloon", 
+            "title": "We can't live in a muffin!", 
+            "author": "CherryDude", 
             "game": "The longestest and most beautiful amazing game ever!", 
             "date": "Just Now",
             "slug": "/"
@@ -169,8 +169,8 @@
         },
                 {
             "image": "https://placehold.co/500",
-            "title": "Why Gen 1 Is Actually Garbage", 
-            "author": "Evan's Balloon", 
+            "title": "We can't live in a muffin!", 
+            "author": "CherryDude", 
             "game": "Pokemon?", 
             "date": "Just Now",
             "slug": "/"
