@@ -1,2 +1,22 @@
 <!-- Breadcrumb -->
 <%- include('partials/breadcrumb', { items: [{ text: 'Home', url: '/' }, { text: 'Users', url: '/' }, { text: data.user.name }] }) %>
+
+<div class="space-y-8">    
+    <!-- Profile Card -->
+    <!-- Hidden HTML for Image Generation -->
+    <div id="profile-card-hidden" class="hidden">
+        <%- include('partials/profile/profile-card', { items: data.user }) %>
+    </div>
+
+    <!-- Display Area -->
+     <section class="mb-8 w-full">
+        <h2 class="text-2xl font-bold mb-4">Your Shareable Profile Card</h2>
+        <img id="profile-card-img" class="w-full max-w-4xl mx-auto shadow-lg" alt="Profile Card" />
+        <div class="flex justify-center gap-4 mt-4">
+            <button id="download-600x200" class="btn btn-xs sm:btn-sm md:btn-md btn-primary">Download (600x200)</button>
+            <button id="download-1200x400" class="btn btn-xs sm:btn-sm md:btn-md btn-secondary">Download (1200x400)</button>
+        </div>
+     </section>
+
+    <script defer type="module" src="<%= profileScriptPath %>"></script>
+</div>

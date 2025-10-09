@@ -1,0 +1,44 @@
+{
+    "user": {
+        "name": "PlatPursuit long long long long long long long long long long long ",
+        "avatar": "/images/pfp.png",
+        "bio": "The greatest place to hunt plats!long long long long long long long long long long ",
+        "profileGrade": "A+",
+        "ppRank": 2438804,
+        "bronze": 1548,
+        "silver": 534,
+        "gold": 286,
+        "platinum": 50,
+        "weeklyBronze": 35,
+        "weeklySilver": 23,
+        "weeklyGold": 8,
+        "weeklyPlatinum": 1,
+        "weeklyChangeBronze": 10,
+        "weeklyChangeSilver": 0,
+        "weeklyChangeGold": 2,
+        "weeklyChangePlatinum": -1,
+        "totalTrophies": 322418,
+        "unearnedTrophies": 121790,
+        "unearnedPercent": 0.3939,
+        "gamesPlayed": 90,
+        "gamesCompleted": 40,
+        "completion": 0.6061,
+        "recentPlat": {
+            "name": "Spider-Man",
+            "image": "../images/sm.png",
+            "trophyImage": "https://placehold.co/500",
+            "earnedDate": "2025-10-02"
+        },
+        "rarestPlat": {
+            "name": "Rocket League",
+            "image": "../images/rl.jpeg",
+            "trophyImage": "https://placehold.co/500",
+            "earnedDate": "2024-12-23"
+        },
+        "badgeShowcaseSlugs": [
+            "../images/badge1.png", "../images/badge2.png", "../images/badge3.png", "../images/badge4.png",
+            "../images/badge5.png", "../images/badge6.png", "../images/badge7.png", "../images/badge8.png",
+            "../images/badge9.png", "../images/badge1.png", "../images/badge2.png", "../images/badge3.png"
+        ]
+    }
+}
