@@ -18,5 +18,24 @@
         </div>
      </section>
 
+     <section class="mb-8 w-full">
+        <div class="tabs tabs-box">
+            <input type="radio" name="profile_tabs" class="tab" aria-label="Games" checked="checked" />
+            <div class="tab-content bg-base-100 border-base-300 p-6">
+                <%- include('partials/profile/games', { items: data.user.games }) %>
+            </div>
+
+            <input type="radio" name="profile_tabs" class="tab" aria-label="Trophies" />
+            <div class="tab-content bg-base-100 border-base-300 p-6">
+                <%- include('partials/profile/trophies', { items: data.user.trophies }) %>
+            </div>
+
+            <input type="radio" name="profile_tabs" class="tab" aria-label="Stats" />
+            <div class="tab-content bg-base-100 border-base-300 p-6">
+                <%- include('partials/profile/stats', { items: data.user.stats }) %>
+            </div>
+        </div>
+     </section>
+
     <script defer type="module" src="<%= profileScriptPath %>"></script>
 </div>

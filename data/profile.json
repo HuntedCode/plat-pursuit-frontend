@@ -39,6 +39,30 @@
             "../images/badge1.png", "../images/badge2.png", "../images/badge3.png", "../images/badge4.png",
             "../images/badge5.png", "../images/badge6.png", "../images/badge7.png", "../images/badge8.png",
             "../images/badge9.png", "../images/badge1.png", "../images/badge2.png", "../images/badge3.png"
+        ],
+        "games": [
+            {
+                "name":"Killer Frequency",
+                "image": "https://placehold.co/500",
+                "slug": "/",
+                "lastPlayed": "2025-09-27",
+                "platform": "PS5",
+                "userBronze": 7,
+                "userSilver": 15,
+                "userGold": 5,
+                "userPlatinum": 1,
+                "totalBronze": 7,
+                "totalSilver": 15,
+                "totalGold": 5,
+                "totalPlatinum": 1,
+                "completion": 1.0
+            }
+        ],
+        "trophies": [
+
+        ],
+        "stats": [
+
         ]
     }
 }
