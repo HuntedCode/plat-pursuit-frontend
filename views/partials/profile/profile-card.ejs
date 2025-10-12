@@ -74,9 +74,13 @@
                     </div>
                 </div>
                 
-                <div class="mx-2 h-50 border-2 border-primary">
-                    <div class="text-center bg-base-300 pt-2 px-2 h-full w-full">
-                        <div class="avatar mb-4">
+                <div class="relative mx-2 h-50 border-2 border-primary">
+                    <div class="absolute top-2 left-2 text-base-content text-sm italic">
+                        <p>Rank: <%= new Intl.NumberFormat('en-US').format(items.ppRank) %></p>
+                        <p>Grade: <%= items.profileGrade %></p>
+                    </div>
+                    <div class="text-center bg-base-300 pt-4 px-2 h-full w-full">
+                        <div class="avatar mb-2">
                             <div class="w-24 rounded-full border-4 border-secondary mx-auto">
                                 <img src="<%= items.avatar %>" alt="<%= items.name %>'s avatar" />
                             </div>

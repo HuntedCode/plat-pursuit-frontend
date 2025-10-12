@@ -32,6 +32,7 @@ const loggedUser = users['PlatPursuit'];
 
 const indexData = require('./data/index.json');
 const profileData = require('./data/profile.json');
+const gamesLimit = 10;
 
 app.get('/', (req, res) => {
     res.render('index', {
@@ -43,23 +44,47 @@ app.get('/', (req, res) => {
 });
 
 app.get('/profile/:username', (req, res) => {
-    const username = req.params.username;
-    const user = users[username]
+  console.log('rendering page...');
+  const username = req.params.username;
+  const user = users[username];
 
-    if (!user) {
-        return res.status(404).render('404', { title: 'User Not Found' });
-    }
+  if (!user) {
+      return res.status(404).render('404', { title: 'User Not Found' });
+  }
 
-    const profileScriptEntry = manifest['public/js/profile.js'] || { file: 'profile.js' }
-    const profileScriptPath = `/dist/${profileScriptEntry.file}`;
+  const profileScriptEntry = manifest['public/js/profile.js'] || { file: 'profile.js' }
+  const profileScriptPath = `/dist/${profileScriptEntry.file}`;
 
-    res.render('profile', {
-        title: `Profile - ${username}`,
-        data: profileData,
-        isLoggedIn: true,
-        loggedUser: loggedUser,
-        profileScriptPath,
+  res.render('profile', {
+      title: `Profile - ${username}`,
+      data: profileData.user.profile,
+      isLoggedIn: true,
+      loggedUser: loggedUser,
+      profileScriptPath,
+      initialGames: profileData.user.games.slice(0, gamesLimit)
+  });
+});
+
+app.get('/profile/:username/games-html', (req, res) => {
+  const username = req.params.username;
+  const user = users[username];
+  if (!user) return res.status(404).json({ error: 'User not found' });
+
+  const page = parseInt(req.query.page) || 1;
+  const start = (page - 1) * gamesLimit;
+  const end = start + gamesLimit;
+  const games = profileData.user.games.slice(start, end);
+
+  res.render('partials/profile/games', {
+    items: games,
+    layout: false
+  }, (err, html) => {
+    if (err) return res.status(500).send('Error rendering games');
+    res.send({
+      html,
+      hasMore: end < profileData.user.games.length
     });
+  });
 });
 
 app.listen(port, () => {

@@ -1,50 +1,52 @@
 {
     "user": {
-        "name": "PlatPursuit long long long long long long long long long long long ",
-        "avatar": "/images/pfp.png",
-        "bio": "The greatest place to hunt plats!long long long long long long long long long long ",
-        "profileGrade": "A+",
-        "ppRank": 2438804,
-        "bronze": 1548,
-        "silver": 534,
-        "gold": 286,
-        "platinum": 50,
-        "weeklyBronze": 35,
-        "weeklySilver": 23,
-        "weeklyGold": 8,
-        "weeklyPlatinum": 1,
-        "weeklyChangeBronze": 10,
-        "weeklyChangeSilver": 0,
-        "weeklyChangeGold": 2,
-        "weeklyChangePlatinum": -1,
-        "totalTrophies": 322418,
-        "unearnedTrophies": 121790,
-        "unearnedPercent": 0.3939,
-        "gamesPlayed": 90,
-        "gamesCompleted": 40,
-        "completion": 0.6061,
-        "recentPlat": {
-            "name": "Spider-Man",
-            "image": "../images/sm.png",
-            "trophyImage": "https://placehold.co/500",
-            "earnedDate": "2025-10-02"
+        "profile": {
+            "name": "PlatPursuit",
+            "avatar": "/images/pfp.png",
+            "bio": "The greatest place to hunt plats!",
+            "profileGrade": "A+",
+            "ppRank": 2438804,
+            "bronze": 1548,
+            "silver": 534,
+            "gold": 286,
+            "platinum": 50,
+            "weeklyBronze": 35,
+            "weeklySilver": 23,
+            "weeklyGold": 8,
+            "weeklyPlatinum": 1,
+            "weeklyChangeBronze": 10,
+            "weeklyChangeSilver": 0,
+            "weeklyChangeGold": 2,
+            "weeklyChangePlatinum": -1,
+            "totalTrophies": 322418,
+            "unearnedTrophies": 121790,
+            "unearnedPercent": 0.3939,
+            "gamesPlayed": 90,
+            "gamesCompleted": 40,
+            "completion": 0.6061,
+            "recentPlat": {
+                "name": "Spider-Man",
+                "image": "../images/sm.png",
+                "trophyImage": "https://placehold.co/500",
+                "earnedDate": "2025-10-02"
+            },
+            "rarestPlat": {
+                "name": "Rocket League",
+                "image": "../images/rl.jpeg",
+                "trophyImage": "https://placehold.co/500",
+                "earnedDate": "2024-12-23"
+            },
+            "badgeShowcaseSlugs": [
+                "../images/badge1.png", "../images/badge2.png", "../images/badge3.png", "../images/badge4.png",
+                "../images/badge5.png", "../images/badge6.png", "../images/badge7.png", "../images/badge8.png",
+                "../images/badge9.png", "../images/badge1.png", "../images/badge2.png", "../images/badge3.png"
+            ]
         },
-        "rarestPlat": {
-            "name": "Rocket League",
-            "image": "../images/rl.jpeg",
-            "trophyImage": "https://placehold.co/500",
-            "earnedDate": "2024-12-23"
-        },
-        "badgeShowcaseSlugs": [
-            "../images/badge1.png", "../images/badge2.png", "../images/badge3.png", "../images/badge4.png",
-            "../images/badge5.png", "../images/badge6.png", "../images/badge7.png", "../images/badge8.png",
-            "../images/badge9.png", "../images/badge1.png", "../images/badge2.png", "../images/badge3.png"
-        ],
         "games": [
             {
                 "name":"Killer Frequency",
-                "image": "https://placehold.co/500",
-                "slug": "/",
+                "image": "../images/games/killerfrequency.png",
+                "slug": "#",
                 "lastPlayed": "2025-09-27",
                 "platform": "PS5",
                 "userBronze": 7,
@@ -55,10 +57,540 @@
                 "totalSilver": 15,
                 "totalGold": 5,
                 "totalPlatinum": 1,
-                "completion": 1.0
+                "completion": 1.000,
+                "timeline": {
+                    "first": "2025-07-15",
+                    "quarter": "2025-07-30",
+                    "half": "2025-08-15",
+                    "threeQuarter": "2025-09-03",
+                    "plat": "2025-09-27"
+                }
+            },
+            {
+                "name":"Ghost of Tsushima",
+                "image": "../images/games/ghost.png",
+                "slug": "#",
+                "lastPlayed": "2025-09-24",
+                "platform": "PS5",
+                "userBronze": 2,
+                "userSilver": 0,
+                "userGold": 0,
+                "userPlatinum": 0,
+                "totalBronze": 59,
+                "totalSilver": 13,
+                "totalGold": 4,
+                "totalPlatinum": 1,
+                "completion": 0.0260,
+                "timeline": {
+                    "first": "2025-09-24"
+                }
+            },
+            {
+                "name":"Viewfinder",
+                "image": "../images/games/viewfinder.png",
+                "slug": "#",
+                "lastPlayed": "2025-09-19",
+                "platform": "PS5",
+                "userBronze": 36,
+                "userSilver": 5,
+                "userGold": 4,
+                "userPlatinum": 1,
+                "totalBronze": 36,
+                "totalSilver": 5,
+                "totalGold": 4,
+                "totalPlatinum": 1,
+                "completion": 1.000,
+                "timeline": {
+                    "first": "2025-09-17",
+                    "quarter": "2025-09-17",
+                    "half": "2025-09-18",
+                    "threeQuarter": "2025-09-18",
+                    "plat": "2025-09-19"
+                }
+            },
+            {
+                "name":"Fall Guys: Ultimate Knockout",
+                "image": "../images/games/fallguys.png",
+                "slug": "#",
+                "lastPlayed": "2025-07-31",
+                "platform": "PS5",
+                "userBronze": 20,
+                "userSilver": 7,
+                "userGold": 4,
+                "userPlatinum": 0,
+                "totalBronze": 21,
+                "totalSilver": 8,
+                "totalGold": 5,
+                "totalPlatinum": 1,
+                "completion": 0.8875,
+                "timeline": {
+                    "first": "2025-07-15",
+                    "quarter": "2025-07-20",
+                    "half": "2025-07-23",
+                    "threeQuarter": "2025-07-30"
+                }
+            },
+            {
+                "name":"Trackmania Turbo",
+                "image": "../images/games/tm.png",
+                "slug": "#",
+                "lastPlayed": "2025-06-06",
+                "platform": "PS4",
+                "userBronze": 20,
+                "userSilver": 7,
+                "userGold": 0,
+                "userPlatinum": 0,
+                "totalBronze": 36,
+                "totalSilver": 10,
+                "totalGold": 2,
+                "totalPlatinum": 1,
+                "completion": 0.5510,
+                "timeline": {
+                    "first": "2023-01-02",
+                    "quarter": "2024-05-20",
+                    "half": "2025-06-06"
+                }
+            },
+            {
+                "name":"Killer Frequency",
+                "image": "../images/games/killerfrequency.png",
+                "slug": "#",
+                "lastPlayed": "2025-09-27",
+                "platform": "PS5",
+                "userBronze": 7,
+                "userSilver": 15,
+                "userGold": 5,
+                "userPlatinum": 1,
+                "totalBronze": 7,
+                "totalSilver": 15,
+                "totalGold": 5,
+                "totalPlatinum": 1,
+                "completion": 1.000,
+                "timeline": {
+                    "first": "2025-07-15",
+                    "quarter": "2025-07-30",
+                    "half": "2025-08-15",
+                    "threeQuarter": "2025-09-03",
+                    "plat": "2025-09-27"
+                }
+            },
+            {
+                "name":"Ghost of Tsushima",
+                "image": "../images/games/ghost.png",
+                "slug": "#",
+                "lastPlayed": "2025-09-24",
+                "platform": "PS5",
+                "userBronze": 2,
+                "userSilver": 0,
+                "userGold": 0,
+                "userPlatinum": 0,
+                "totalBronze": 59,
+                "totalSilver": 13,
+                "totalGold": 4,
+                "totalPlatinum": 1,
+                "completion": 0.0260,
+                "timeline": {
+                    "first": "2025-09-24"
+                }
+            },
+            {
+                "name":"Viewfinder",
+                "image": "../images/games/viewfinder.png",
+                "slug": "#",
+                "lastPlayed": "2025-09-19",
+                "platform": "PS5",
+                "userBronze": 36,
+                "userSilver": 5,
+                "userGold": 4,
+                "userPlatinum": 1,
+                "totalBronze": 36,
+                "totalSilver": 5,
+                "totalGold": 4,
+                "totalPlatinum": 1,
+                "completion": 1.000,
+                "timeline": {
+                    "first": "2025-09-17",
+                    "quarter": "2025-09-17",
+                    "half": "2025-09-18",
+                    "threeQuarter": "2025-09-18",
+                    "plat": "2025-09-19"
+                }
+            },
+            {
+                "name":"Fall Guys: Ultimate Knockout",
+                "image": "../images/games/fallguys.png",
+                "slug": "#",
+                "lastPlayed": "2025-07-31",
+                "platform": "PS5",
+                "userBronze": 20,
+                "userSilver": 7,
+                "userGold": 4,
+                "userPlatinum": 0,
+                "totalBronze": 21,
+                "totalSilver": 8,
+                "totalGold": 5,
+                "totalPlatinum": 1,
+                "completion": 0.8875,
+                "timeline": {
+                    "first": "2025-07-15",
+                    "quarter": "2025-07-20",
+                    "half": "2025-07-23",
+                    "threeQuarter": "2025-07-30"
+                }
+            },
+            {
+                "name":"Trackmania Turbo",
+                "image": "../images/games/tm.png",
+                "slug": "#",
+                "lastPlayed": "2025-06-06",
+                "platform": "PS4",
+                "userBronze": 20,
+                "userSilver": 7,
+                "userGold": 0,
+                "userPlatinum": 0,
+                "totalBronze": 36,
+                "totalSilver": 10,
+                "totalGold": 2,
+                "totalPlatinum": 1,
+                "completion": 0.5510,
+                "timeline": {
+                    "first": "2023-01-02",
+                    "quarter": "2024-05-20",
+                    "half": "2025-06-06"
+                }
+            },
+            {
+                "name":"Killer Frequency",
+                "image": "https://placehold.co/500",
+                "slug": "#",
+                "lastPlayed": "2025-09-27",
+                "platform": "PS5",
+                "userBronze": 7,
+                "userSilver": 15,
+                "userGold": 5,
+                "userPlatinum": 1,
+                "totalBronze": 7,
+                "totalSilver": 15,
+                "totalGold": 5,
+                "totalPlatinum": 1,
+                "completion": 1.000,
+                "timeline": {
+                    "first": "2025-07-15",
+                    "quarter": "2025-07-30",
+                    "half": "2025-08-15",
+                    "threeQuarter": "2025-09-03",
+                    "plat": "2025-09-27"
+                }
+            },
+            {
+                "name":"Ghost of Tsushima",
+                "image": "https://placehold.co/500",
+                "slug": "#",
+                "lastPlayed": "2025-09-24",
+                "platform": "PS5",
+                "userBronze": 2,
+                "userSilver": 0,
+                "userGold": 0,
+                "userPlatinum": 0,
+                "totalBronze": 59,
+                "totalSilver": 13,
+                "totalGold": 4,
+                "totalPlatinum": 1,
+                "completion": 0.0260,
+                "timeline": {
+                    "first": "2025-09-24"
+                }
+            },
+            {
+                "name":"Viewfinder",
+                "image": "https://placehold.co/500",
+                "slug": "#",
+                "lastPlayed": "2025-09-19",
+                "platform": "PS5",
+                "userBronze": 36,
+                "userSilver": 5,
+                "userGold": 4,
+                "userPlatinum": 1,
+                "totalBronze": 36,
+                "totalSilver": 5,
+                "totalGold": 4,
+                "totalPlatinum": 1,
+                "completion": 1.000,
+                "timeline": {
+                    "first": "2025-09-17",
+                    "quarter": "2025-09-17",
+                    "half": "2025-09-18",
+                    "threeQuarter": "2025-09-18",
+                    "plat": "2025-09-19"
+                }
+            },
+            {
+                "name":"Fall Guys: Ultimate Knockout",
+                "image": "https://placehold.co/500",
+                "slug": "#",
+                "lastPlayed": "2025-07-31",
+                "platform": "PS5",
+                "userBronze": 20,
+                "userSilver": 7,
+                "userGold": 4,
+                "userPlatinum": 0,
+                "totalBronze": 21,
+                "totalSilver": 8,
+                "totalGold": 5,
+                "totalPlatinum": 1,
+                "completion": 0.8875,
+                "timeline": {
+                    "first": "2025-07-15",
+                    "quarter": "2025-07-20",
+                    "half": "2025-07-23",
+                    "threeQuarter": "2025-07-30"
+                }
+            },
+            {
+                "name":"Trackmania Turbo",
+                "image": "https://placehold.co/500",
+                "slug": "#",
+                "lastPlayed": "2025-06-06",
+                "platform": "PS4",
+                "userBronze": 20,
+                "userSilver": 7,
+                "userGold": 0,
+                "userPlatinum": 0,
+                "totalBronze": 36,
+                "totalSilver": 10,
+                "totalGold": 2,
+                "totalPlatinum": 1,
+                "completion": 0.5510,
+                "timeline": {
+                    "first": "2023-01-02",
+                    "quarter": "2024-05-20",
+                    "half": "2025-06-06"
+                }
+            },
+            {
+                "name":"Killer Frequency",
+                "image": "https://placehold.co/500",
+                "slug": "#",
+                "lastPlayed": "2025-09-27",
+                "platform": "PS5",
+                "userBronze": 7,
+                "userSilver": 15,
+                "userGold": 5,
+                "userPlatinum": 1,
+                "totalBronze": 7,
+                "totalSilver": 15,
+                "totalGold": 5,
+                "totalPlatinum": 1,
+                "completion": 1.000,
+                "timeline": {
+                    "first": "2025-07-15",
+                    "quarter": "2025-07-30",
+                    "half": "2025-08-15",
+                    "threeQuarter": "2025-09-03",
+                    "plat": "2025-09-27"
+                }
+            },
+            {
+                "name":"Ghost of Tsushima",
+                "image": "https://placehold.co/500",
+                "slug": "#",
+                "lastPlayed": "2025-09-24",
+                "platform": "PS5",
+                "userBronze": 2,
+                "userSilver": 0,
+                "userGold": 0,
+                "userPlatinum": 0,
+                "totalBronze": 59,
+                "totalSilver": 13,
+                "totalGold": 4,
+                "totalPlatinum": 1,
+                "completion": 0.0260,
+                "timeline": {
+                    "first": "2025-09-24"
+                }
+            },
+            {
+                "name":"Viewfinder",
+                "image": "https://placehold.co/500",
+                "slug": "#",
+                "lastPlayed": "2025-09-19",
+                "platform": "PS5",
+                "userBronze": 36,
+                "userSilver": 5,
+                "userGold": 4,
+                "userPlatinum": 1,
+                "totalBronze": 36,
+                "totalSilver": 5,
+                "totalGold": 4,
+                "totalPlatinum": 1,
+                "completion": 1.000,
+                "timeline": {
+                    "first": "2025-09-17",
+                    "quarter": "2025-09-17",
+                    "half": "2025-09-18",
+                    "threeQuarter": "2025-09-18",
+                    "plat": "2025-09-19"
+                }
+            },
+            {
+                "name":"Fall Guys: Ultimate Knockout",
+                "image": "https://placehold.co/500",
+                "slug": "#",
+                "lastPlayed": "2025-07-31",
+                "platform": "PS5",
+                "userBronze": 20,
+                "userSilver": 7,
+                "userGold": 4,
+                "userPlatinum": 0,
+                "totalBronze": 21,
+                "totalSilver": 8,
+                "totalGold": 5,
+                "totalPlatinum": 1,
+                "completion": 0.8875,
+                "timeline": {
+                    "first": "2025-07-15",
+                    "quarter": "2025-07-20",
+                    "half": "2025-07-23",
+                    "threeQuarter": "2025-07-30"
+                }
+            },
+            {
+                "name":"Trackmania Turbo",
+                "image": "https://placehold.co/500",
+                "slug": "#",
+                "lastPlayed": "2025-06-06",
+                "platform": "PS4",
+                "userBronze": 20,
+                "userSilver": 7,
+                "userGold": 0,
+                "userPlatinum": 0,
+                "totalBronze": 36,
+                "totalSilver": 10,
+                "totalGold": 2,
+                "totalPlatinum": 1,
+                "completion": 0.5510,
+                "timeline": {
+                    "first": "2023-01-02",
+                    "quarter": "2024-05-20",
+                    "half": "2025-06-06"
+                }
+            },
+            {
+                "name":"Killer Frequency",
+                "image": "https://placehold.co/500/black/white",
+                "slug": "#",
+                "lastPlayed": "2025-09-27",
+                "platform": "PS5",
+                "userBronze": 7,
+                "userSilver": 15,
+                "userGold": 5,
+                "userPlatinum": 1,
+                "totalBronze": 7,
+                "totalSilver": 15,
+                "totalGold": 5,
+                "totalPlatinum": 1,
+                "completion": 1.000,
+                "timeline": {
+                    "first": "2025-07-15",
+                    "quarter": "2025-07-30",
+                    "half": "2025-08-15",
+                    "threeQuarter": "2025-09-03",
+                    "plat": "2025-09-27"
+                }
+            },
+            {
+                "name":"Ghost of Tsushima",
+                "image": "https://placehold.co/500/black/white",
+                "slug": "#",
+                "lastPlayed": "2025-09-24",
+                "platform": "PS5",
+                "userBronze": 2,
+                "userSilver": 0,
+                "userGold": 0,
+                "userPlatinum": 0,
+                "totalBronze": 59,
+                "totalSilver": 13,
+                "totalGold": 4,
+                "totalPlatinum": 1,
+                "completion": 0.0260,
+                "timeline": {
+                    "first": "2025-09-24"
+                }
+            },
+            {
+                "name":"Viewfinder",
+                "image": "https://placehold.co/500/black/white",
+                "slug": "#",
+                "lastPlayed": "2025-09-19",
+                "platform": "PS5",
+                "userBronze": 36,
+                "userSilver": 5,
+                "userGold": 4,
+                "userPlatinum": 1,
+                "totalBronze": 36,
+                "totalSilver": 5,
+                "totalGold": 4,
+                "totalPlatinum": 1,
+                "completion": 1.000,
+                "timeline": {
+                    "first": "2025-09-17",
+                    "quarter": "2025-09-17",
+                    "half": "2025-09-18",
+                    "threeQuarter": "2025-09-18",
+                    "plat": "2025-09-19"
+                }
+            },
+            {
+                "name":"Fall Guys: Ultimate Knockout",
+                "image": "https://placehold.co/500/black/white",
+                "slug": "#",
+                "lastPlayed": "2025-07-31",
+                "platform": "PS5",
+                "userBronze": 20,
+                "userSilver": 7,
+                "userGold": 4,
+                "userPlatinum": 0,
+                "totalBronze": 21,
+                "totalSilver": 8,
+                "totalGold": 5,
+                "totalPlatinum": 1,
+                "completion": 0.8875,
+                "timeline": {
+                    "first": "2025-07-15",
+                    "quarter": "2025-07-20",
+                    "half": "2025-07-23",
+                    "threeQuarter": "2025-07-30"
+                }
+            },
+            {
+                "name":"Trackmania Turbo",
+                "image": "https://placehold.co/500/black/white",
+                "slug": "#",
+                "lastPlayed": "2025-06-06",
+                "platform": "PS4",
+                "userBronze": 20,
+                "userSilver": 7,
+                "userGold": 0,
+                "userPlatinum": 0,
+                "totalBronze": 36,
+                "totalSilver": 10,
+                "totalGold": 2,
+                "totalPlatinum": 1,
+                "completion": 0.5510,
+                "timeline": {
+                    "first": "2023-01-02",
+                    "quarter": "2024-05-20",
+                    "half": "2025-06-06"
+                }
             }
         ],
         "trophies": [
+
+        ],
+        "guides": [
+
+        ],
+        "badges": [
 
         ],
         "stats": [
