@@ -1,6 +1,6 @@
 <% items.forEach(game => { %>
     <div tabindex="0" class="card cursor-pointer border-2 border-base-300 shadow-lg w-full m-2 overflow-x-auto group hover:border-primary hover:shadow-primary focus-within:border-primary focus-within:shadow-primary">
-        <div class="card-body flex flex-col items-center py-2">
+        <div class="card-body flex flex-col bg-base-200 items-center py-2">
             <div class="flex flex-col lg:flex-row w-full items-center">
                 <!-- Game Info -->
                 <div class="flex flex-row w-full items-center mb-4 lg:mb-0">
@@ -11,7 +11,7 @@
                         <h1 class="text-lg sm:text-xl md:text-2xl lg:text-3xl italic hover:scale-105 line-clamp-2 pr-1"><%= game.name %> </h1>
                         <p class="text-xs sm:text-sm lg:text-md text-base-content font-semibold hover:scale-105"><%= game.platform %></p>
                         <p class="text-xs sm:text-sm lg:text-md text-base-content/70 italic hover:scale-105">Latest Trophy: <%= game.lastPlayed %></p>
-                        <a href="<%= game.slug %>" class="btn btn-xs max-w-45 hover:scale-105 font-base">Visit Game Page</a>
+                        <a href="<%= game.slug %>" class="btn btn-xs btn-accent max-w-45 hover:scale-105 font-base">Visit Game Page</a>
                     </div>
                 </div>
 

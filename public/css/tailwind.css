@@ -3162,6 +3162,10 @@
     --badge-color: var(--color-secondary);
     --badge-fg: var(--color-secondary-content);
   }
+  .btn-accent {
+    --btn-color: var(--color-accent);
+    --btn-fg: var(--color-accent-content);
+  }
   .btn-primary {
     --btn-color: var(--color-primary);
     --btn-fg: var(--color-primary-content);
