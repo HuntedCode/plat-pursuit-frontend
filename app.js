@@ -44,7 +44,6 @@ app.get('/', (req, res) => {
 });
 
 app.get('/profile/:username', (req, res) => {
-  console.log('rendering page...');
   const username = req.params.username;
   const user = users[username];
 

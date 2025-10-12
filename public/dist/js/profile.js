@@ -3,6 +3,7 @@ import html2canvas from 'html2canvas-pro';
 document.addEventListener('DOMContentLoaded', () => {
     const hiddenCard = document.getElementById('profile-card-hidden');
     const imgEl = document.getElementById('profile-card-img');
+    const skeletonEl = document.getElementById('profile-card-skeleton');
 
     const loadImages = (element) => {
         const images = element.querySelectorAll('img');
@@ -30,6 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
             logging: true
         }).then(canvas => {
             imgEl.src = canvas.toDataURL('image/png');
+            imgEl.classList.remove('hidden');
+            skeletonEl.classList.add('hidden');
 
             document.getElementById('download-1200x400').addEventListener('click', () => {
                 const link = document.createElement('a');
@@ -51,6 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }).catch(error => {
             console.error('html2canvas error:', error);
+            skeletonEl.innerHTML = '<p class="text-error text-center">Error loading card</p>';
         }).finally(() => {
             hiddenCard.classList.add('hidden');
             hiddenCard.style.position = '';
