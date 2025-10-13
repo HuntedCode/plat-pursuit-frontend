@@ -1,0 +1,67 @@
+<div id="games-filter-form" class="form-control w-full border-2 border-base-300 shadow-lg p-4 mb-6 hover:border-accent hover:shadow-accent" data-username="<%= items.name %>">
+    <label class="label">
+        <span class="label-text italic">Search Games</span>
+    </label>
+    <input id="game-search" type="text" placeholder="Search <%= items.name %>'s Games..." class="input input-primary w-full" />
+
+    <label class="label">
+        <span class="label-text italic mt-4">Filter Games</span>
+    </label>
+    <div class="flex flex-col md:flex-row md:gap-4">
+        <div class="flex flex-col lg:flex-row lg:gap-4 w-full">
+            <fieldset class="fieldset w-full">
+                <legend class="fieldset-legend italic">Platform</legend>
+                <select id="platform-filter" class="select select-secondary">
+                    <option value="">All Platforms</option>
+                    <option value="PS5">PS5</option>
+                    <option value="PS4">PS4</option>
+                    <option value="PS3">PS3</option>
+                    <option value="PS Vita">PS Vita</option>
+                    <option value="PSVR">PSVR</option>
+                </select>
+                <span class="label">Never wanna</span>
+            </fieldset>
+
+            <fieldset class="fieldset w-full">
+                <legend class="fieldset-legend italic">Completion %</legend>
+                <select id="completion-filter" class="select select-secondary">
+                    <option value="">All %</option>
+                    <option value="0-24">0-24%</option>
+                    <option value="25-49">25-49%</option>
+                    <option value="50-74">50-74%</option>
+                    <option value="75-99">75-99%</option>
+                    <option value="100">100%</option>
+                </select>
+                <span class="label">give you up.</span>
+            </fieldset>
+        </div>
+
+        <div class="flex flex-col lg:flex-row lg:gap-4 w-full">
+            <fieldset class="fieldset w-full">
+                <legend class="fieldset-legend italic">Plat Status</legend>
+                <select id="plat-filter" class="select select-secondary">
+                    <option value="">Both Earned & Unearned</option>
+                    <option value="earned">Platinum Earned</option>
+                    <option value="unearned">Platinum Unearned</option>
+                </select>
+                <span class="label">Never wanna</span>
+            </fieldset>
+
+            <fieldset class="fieldset w-full">
+                <legend class="fieldset-legend italic">Game Sort</legend>
+                <select id="game-sort" class="select select-secondary">
+                    <option value="">Last Trophy Earned (Default)</option>
+                    <option value="alpha">Alphabetical</option>
+                    <option value="completionAsc">Completion % Ascending</option>
+                    <option value="completionDesc">Completion % Descending</option>
+                </select>
+                <span class="label">let you down.</span>
+            </fieldset>
+        </div>
+    </div>
+
+    <label class="label mt-4">
+        <span class="label-text italic">Save, Filter & Search</span>
+    </label>
+    <button class="btn btm-sm block w-full hover:border-primary hover:shadow-lg hover:shadow-primary hover:italic hover:animate-pulse" type="submit">Feel The Power...</button>
+</div>

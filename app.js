@@ -60,7 +60,9 @@ app.get('/profile/:username', (req, res) => {
       isLoggedIn: true,
       loggedUser: loggedUser,
       profileScriptPath,
-      initialGames: profileData.user.games.slice(0, gamesLimit)
+      initialGames: profileData.user.games.slice(0, gamesLimit),
+
+      allGames: profileData.user.games // FOR DEMO PURPOSES ONLY! Full game array for faux-filtering/sorting/searching.
   });
 });
 

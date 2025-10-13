@@ -2069,6 +2069,16 @@
   .mr-4 {
     margin-right: calc(var(--spacing) * 4);
   }
+  .fieldset-legend {
+    margin-bottom: calc(0.25rem * -1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: calc(0.25rem * 2);
+    padding-block: calc(0.25rem * 2);
+    color: var(--color-base-content);
+    font-weight: 600;
+  }
   .mb-0 {
     margin-bottom: calc(var(--spacing) * 0);
   }
@@ -2080,6 +2090,9 @@
   }
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
+  }
+  .mb-6 {
+    margin-bottom: calc(var(--spacing) * 6);
   }
   .mb-8 {
     margin-bottom: calc(var(--spacing) * 8);
@@ -2222,6 +2235,14 @@
     &::-webkit-scrollbar {
       display: none;
     }
+  }
+  .fieldset {
+    display: grid;
+    gap: calc(0.25rem * 1.5);
+    padding-block: calc(0.25rem * 1);
+    font-size: 0.75rem;
+    grid-template-columns: 1fr;
+    grid-auto-rows: max-content;
   }
   .card-actions {
     display: flex;
@@ -3202,6 +3223,11 @@
       --input-color: var(--color-primary);
     }
   }
+  .select-secondary {
+    &, &:focus, &:focus-within {
+      --input-color: var(--color-secondary);
+    }
+  }
   .group-focus-within\:max-h-\[500px\] {
     &:is(:where(.group):focus-within *) {
       max-height: 500px;
@@ -3353,6 +3379,13 @@
         @supports (color: color-mix(in lab, red, red)) {
           background-color: color-mix(in oklab, var(--color-base-300) 90%, transparent);
         }
+      }
+    }
+  }
+  .hover\:italic {
+    &:hover {
+      @media (hover: hover) {
+        font-style: italic;
       }
     }
   }
@@ -3620,6 +3653,16 @@
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
+  .md\:flex-row {
+    @media (width >= 48rem) {
+      flex-direction: row;
+    }
+  }
+  .md\:gap-4 {
+    @media (width >= 48rem) {
+      gap: calc(var(--spacing) * 4);
+    }
+  }
   .md\:gap-6 {
     @media (width >= 48rem) {
       gap: calc(var(--spacing) * 6);
@@ -3749,6 +3792,11 @@
   .lg\:flex-row {
     @media (width >= 64rem) {
       flex-direction: row;
+    }
+  }
+  .lg\:gap-4 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 4);
     }
   }
   .lg\:text-2xl {

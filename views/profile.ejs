@@ -31,7 +31,10 @@
                 </svg>
                 Games
             </label>
+
             <div class="tab-content bg-base-100 border-base-300 p-6">
+                <%- include('partials/profile/games-header', { items: data }) %>
+
                 <section id="games-container" class="flex flex-col justify-center items-center gap-4 w-full">
                     <%- include('partials/profile/games', { items: initialGames }) %>
                 </section>
@@ -79,38 +82,5 @@
      </section>
 
     <script defer type="module" src="<%= profileScriptPath %>"></script>
+    <script defer type="module" src="/js/profile/games.js"></script>
 </div>
-
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const container = document.getElementById('games-container');
-        const sentinel = document.getElementById('games-sentinel');
-        let page = 2;
-        let isLoading = false;
-        let hasMore = true;
-
-        const loadMore = () => {
-            if (isLoading || !hasMore) return;
-            isLoading = true;
-
-            fetch(`/profile/<%= data.name %>/games-html?page=${page}`)
-              .then(res => res.json())
-              .then(data => {
-                container.innerHTML += data.html;
-                hasMore = data.hasMore;
-                page++;
-                isLoading = false;
-              })
-              .catch(err => {
-                console.error('Error loading games:', err);
-                isLoading = false;
-              });
-        };
-
-        const observer = new IntersectionObserver(entries => {
-            if (entries[0].isIntersecting) loadMore();
-        }, { threshold: 0.1 });
-
-        observer.observe(sentinel);
-    });
-</script>
