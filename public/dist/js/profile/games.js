@@ -20,16 +20,19 @@ document.addEventListener('DOMContentLoaded', () => {
         if (plat) params += `&plat=${plat}`;
         if (sort) params += `&sort=${sort}`;
 
+        console.log(params);
         return '?' + params;
     }
 
-    const loadMore = () => {
+    let savedParams = getParams();
+
+    const loadMore = (reset=false) => {
         if (isLoading || !hasMore) return;
         isLoading = true;
-        console.log(`Loading page ${page}`);
+        console.log(`Loading page ?${savedParams}`);
         const username = form.dataset.username;
 
-        fetch(`/profile/${username}/games-html${getParams()}`)
+        fetch(`/profile/${username}/games-html${savedParams}`)
             .then(res => res.json())
             .then(data => {
                 container.innerHTML += data.html;
@@ -41,16 +44,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 console.error('Error loading games:', err);
                 isLoading = false;
             });
+
+        if (reset) savedParams
     };
 
     const resetAndReload = () => {
         container.innerHTML = '';
         page = 1;
         hasMore = true;
+        savedParams = getParams();
         loadMore();
     }
 
     form.addEventListener('submit', (e) => {
+        console.log("submitting...");
         e.preventDefault();
         resetAndReload();
     });
