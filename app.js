@@ -61,8 +61,6 @@ app.get('/profile/:username', (req, res) => {
       isLoggedIn: true,
       loggedUser: loggedUser,
       profileScriptPath,
-      initialGames: profileData.user.games.slice(0, gamesLimit),
-      initialTrophies: profileData.user.trophies.slice(0, trophiesLimit),
   });
 });
 
@@ -84,6 +82,28 @@ app.get('/profile/:username/games-html', (req, res) => {
     res.send({
       html,
       hasMore: end < profileData.user.games.length
+    });
+  });
+});
+
+app.get('/profile/:username/trophies-html', (req, res) => {
+  const username = req.params.username;
+  const user = users[username];
+  if (!user) return res.status(404).json({ error: 'User not found' });
+
+  const page = parseInt(req.query.page) || 1;
+  const start = (page - 1) * trophiesLimit;
+  const end = start + trophiesLimit;
+  const trophies = profileData.user.trophies.slice(start, end);
+
+  res.render('partials/profile/trophies', {
+    items: trophies,
+    layout: false
+  }, (err, html) => {
+    if (err) return res.status(500).send('Error rendering trophies');
+    res.send({
+      html,
+      hasMore: end < profileData.user.trophies.length
     });
   });
 });

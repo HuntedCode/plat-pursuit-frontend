@@ -1,0 +1,68 @@
+<form id="trophies-filter-form" class="form-control w-full border-2 border-base-300 shadow-lg shadow-base-300 p-4 mb-6 rounded-box hover:border-accent hover:shadow-accent" data-username="<%= items.name %>">
+    <label class="label">
+        <span class="label-text italic">Search Trophies</span>
+    </label>
+    <input id="trophy-search" type="text" placeholder="Search <%= items.name %>'s Trophies..." class="input input-primary w-full" />
+
+    <label class="label">
+        <span class="label-text italic mt-4">Filter Trophies</span>
+    </label>
+    <div class="flex flex-col md:flex-row md:gap-4 w-full">
+        <div class="flex flex-col lg:flex-row lg:gap-4 w-full">
+            <fieldset class="fieldset w-full">
+                <legend class="fieldset-legend italic">Trophy Type</legend>
+                <select id="trophies-type-filter" class="select select-secondary w-full">
+                    <option value="">All Types</option>
+                    <option value="bronze">Bronze</option>
+                    <option value="silver">Silver</option>
+                    <option value="gold">Gold</option>
+                    <option value="platinum">Platinum</option>
+                </select>
+                <span class="label">Never gunna</span>
+            </fieldset>
+
+            <fieldset class="fieldset w-full">
+                <legend class="fieldset-legend italic">Trophy Rarity</legend>
+                <select id="trophies-rarity-filter" class="select select-secondary w-full">
+                    <option value="">All %</option>
+                    <option value="common">Common</option>
+                    <option value="uncommon">Uncommon</option>
+                    <option value="rare">Rare</option>
+                    <option value="very rare">Very Rare</option>
+                    <option value="ultra rare">Ultra Rare</option>
+                </select>
+                <span class="label">give you up.</span>
+            </fieldset>
+        </div>
+
+        <div class="flex flex-col lg:flex-row lg:gap-4 w-full">
+            <fieldset class="fieldset w-full">
+                <legend class="fieldset-legend italic">Platform</legend>
+                <select id="trophies-platform-filter" class="select select-secondary w-full">
+                    <option value="">All</option>
+                    <option value="PS5">PS5</option>
+                    <option value="PS4">PS4</option>
+                    <option value="PS3">PS3</option>
+                    <option value="PS Vita">PS Vita</option>
+                    <option value="PSVR">PSVR</option>
+                </select>
+                <span class="label">Never gunna</span>
+            </fieldset>
+
+            <fieldset class="fieldset w-full">
+                <legend class="fieldset-legend italic">Trophy Sort</legend>
+                <select id="trophy-sort" class="select select-secondary w-full">
+                    <option value="">Newest Trophy (Default)</option>
+                    <option value="oldest">Oldest Trophy</option>
+                    <option value="alpha">Alphabetical</option>
+                </select>
+                <span class="label">let you down.</span>
+            </fieldset>
+        </div>
+    </div>
+
+    <label class="label mt-4">
+        <span class="label-text italic">Save, Filter & Search</span>
+    </label>
+    <button class="btn btm-sm block w-full hover:border-primary hover:shadow-lg hover:shadow-primary hover:italic hover:animate-pulse" type="submit" for="games-filter-form">Feel The Power...</button>
+</form>

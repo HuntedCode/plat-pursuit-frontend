@@ -1,23 +1,23 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const form = document.getElementById('games-filter-form');
-    const container = document.getElementById('games-container');
-    const sentinel = document.getElementById('games-sentinel');
+    const form = document.getElementById('trophies-filter-form');
+    const container = document.getElementById('trophies-container');
+    const sentinel = document.getElementById('trophies-sentinel');
     let page = 1;
     let isLoading = false;
     let hasMore = true;
 
     const getParams = () => {
-        const search = document.getElementById('game-search').value.trim();
-        const platform = document.getElementById('games-platform-filter').value;
-        const completion = document.getElementById('games-completion-filter').value;
-        const plat = document.getElementById('games-plat-filter').value;
-        const sort = document.getElementById('game-sort').value;
+        const search = document.getElementById('trophy-search').value.trim();
+        const type = document.getElementById('trophies-type-filter').value;
+        const rarity = document.getElementById('trophies-rarity-filter').value;
+        const platform = document.getElementById('trophies-platform-filter').value;
+        const sort = document.getElementById('trophy-sort').value;
 
         let params = `page=${page}`;
         if (search) params += `&search=${encodeURIComponent(search)}`;
+        if (type) params += `&type=${type}`;
+        if (rarity) params += `&rarity=${rarity}`;
         if (platform) params += `&platform=${platform}`;
-        if (completion) params += `&completion=${completion}`;
-        if (plat) params += `&plat=${plat}`;
         if (sort) params += `&sort=${sort}`;
 
         console.log(params);
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         isLoading = true;
         const username = form.dataset.username;
 
-        fetch(`/profile/${username}/games-html${savedParams}`)
+        fetch(`/profile/${username}/trophies-html${savedParams}`)
             .then(res => res.json())
             .then(data => {
                 container.innerHTML += data.html;

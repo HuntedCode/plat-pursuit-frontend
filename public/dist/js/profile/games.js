@@ -8,9 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const getParams = () => {
         const search = document.getElementById('game-search').value.trim();
-        const platform = document.getElementById('platform-filter').value;
-        const completion = document.getElementById('completion-filter').value;
-        const plat = document.getElementById('plat-filter').value;
+        const platform = document.getElementById('games-platform-filter').value;
+        const completion = document.getElementById('games-completion-filter').value;
+        const plat = document.getElementById('games-plat-filter').value;
         const sort = document.getElementById('game-sort').value;
 
         let params = `page=${page}`;

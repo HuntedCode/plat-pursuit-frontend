@@ -36,7 +36,7 @@
                 <%- include('partials/profile/games-header', { items: data }) %>
 
                 <section id="games-container" class="flex flex-col justify-center items-center gap-4 w-full">
-                    <%- include('partials/profile/games', { items: initialGames }) %>
+
                 </section>
                 <div id="games-sentinel" class="h-1"></div>
             </div>
@@ -47,10 +47,12 @@
                 Trophies
             </label>
             <div class="tab-content bg-base-100 border-base-300 p-6">
+                <%- include('partials/profile/trophies-header.ejs', { items: data }) %>
                 
                 <section id="trophies-container" class="flex flex-col justify-center items-center gap-4 w-full">
-                    <%- include('partials/profile/trophies', { items: initialTrophies }) %>
+
                 </section>
+                <div id="trophies-sentinel" class="h-1"></div>
             </div>
 
             <label class="tab">
@@ -86,4 +88,5 @@
 
     <script defer type="module" src="<%= profileScriptPath %>"></script>
     <script defer type="module" src="/js/profile/games.js"></script>
+    <script defer type="module" src="/js/profile/trophies.js"></script>
 </div>
