@@ -33,6 +33,7 @@ const loggedUser = users['PlatPursuit'];
 const indexData = require('./data/index.json');
 const profileData = require('./data/profile.json');
 const gamesLimit = 10;
+const trophiesLimit = 10;
 
 app.get('/', (req, res) => {
     res.render('index', {
@@ -61,8 +62,7 @@ app.get('/profile/:username', (req, res) => {
       loggedUser: loggedUser,
       profileScriptPath,
       initialGames: profileData.user.games.slice(0, gamesLimit),
-
-      allGames: profileData.user.games // FOR DEMO PURPOSES ONLY! Full game array for faux-filtering/sorting/searching.
+      initialTrophies: profileData.user.trophies.slice(0, trophiesLimit),
   });
 });
 

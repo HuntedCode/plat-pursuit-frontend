@@ -1,1 +1,11 @@
-<p>Trophies!</p>
+<% items.forEach(trophy => { %>
+    <div tabindex="0" class="card cursor-pointer border-2 border-base-300 shadow-lg w-full m-2 overflow-x-auto group hover:border-warning hover:shadow-warning focus-within:border-warning focus-within:shadow-warning">
+        <div class="card-body flex flex-col bg-base-200 items-center py-2">
+            <div class="flex flex-col lg:flex-row w-full items-center">
+                <figure class="flex shrink-0 rounded-lg border-2 border-base-300 mr-4 transition duration-300 group-hover:scale-105 group-hover:border-warning group-focus-within:scale-105 group-focus-within:border-warning hover:animate-pulse">
+                    <img src="<%= trophy.gameImage %>" alt="<%= trophy.gameAlt || trophy.game + ' image' %>" class="w-16 h-16 md:w-22 md:h-22 xl:w-26 xl:h-26 object-cover group-hover:scale-105 group-focus-within:scale-105" loading="lazy" />
+                </figure>
+            </div>
+        </div>
+    </div>
+<% }) %>

@@ -3252,6 +3252,11 @@
       border-color: var(--color-primary);
     }
   }
+  .group-focus-within\:border-warning {
+    &:is(:where(.group):focus-within *) {
+      border-color: var(--color-warning);
+    }
+  }
   .group-focus-within\:opacity-100 {
     &:is(:where(.group):focus-within *) {
       opacity: 100%;
@@ -3303,6 +3308,13 @@
       }
     }
   }
+  .group-hover\:border-warning {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        border-color: var(--color-warning);
+      }
+    }
+  }
   .focus-within\:border-primary {
     &:focus-within {
       border-color: var(--color-primary);
@@ -3313,11 +3325,24 @@
       border-color: var(--color-secondary);
     }
   }
+  .focus-within\:border-warning {
+    &:focus-within {
+      border-color: var(--color-warning);
+    }
+  }
   .focus-within\:shadow-primary {
     &:focus-within {
       --tw-shadow-color: var(--color-primary);
       @supports (color: color-mix(in lab, red, red)) {
         --tw-shadow-color: color-mix(in oklab, var(--color-primary) var(--tw-shadow-alpha), transparent);
+      }
+    }
+  }
+  .focus-within\:shadow-warning {
+    &:focus-within {
+      --tw-shadow-color: var(--color-warning);
+      @supports (color: color-mix(in lab, red, red)) {
+        --tw-shadow-color: color-mix(in oklab, var(--color-warning) var(--tw-shadow-alpha), transparent);
       }
     }
   }
@@ -3362,6 +3387,13 @@
     &:hover {
       @media (hover: hover) {
         border-color: var(--color-secondary);
+      }
+    }
+  }
+  .hover\:border-warning {
+    &:hover {
+      @media (hover: hover) {
+        border-color: var(--color-warning);
       }
     }
   }
@@ -3431,6 +3463,16 @@
         --tw-shadow-color: var(--color-secondary);
         @supports (color: color-mix(in lab, red, red)) {
           --tw-shadow-color: color-mix(in oklab, var(--color-secondary) var(--tw-shadow-alpha), transparent);
+        }
+      }
+    }
+  }
+  .hover\:shadow-warning {
+    &:hover {
+      @media (hover: hover) {
+        --tw-shadow-color: var(--color-warning);
+        @supports (color: color-mix(in lab, red, red)) {
+          --tw-shadow-color: color-mix(in oklab, var(--color-warning) var(--tw-shadow-alpha), transparent);
         }
       }
     }

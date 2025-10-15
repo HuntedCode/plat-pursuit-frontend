@@ -4,6 +4,7 @@
             "name": "PlatPursuit",
             "avatar": "/images/pfp.png",
             "bio": "The greatest place to hunt plats!",
+            "lastUpdated": "2025-07-15T15:00:00",
             "profileGrade": "A+",
             "ppRank": 2438804,
             "bronze": 1548,
@@ -585,7 +586,137 @@
             }
         ],
         "trophies": [
-
+            {
+                "name": "Certified Platinum",
+                "description": "Obtain all Trophies",
+                "game": "Killer Frequency",
+                "type": "platinum",
+                "trophyImage": "../images/trophies/kf1.png",
+                "gameImage": "../images/games/killerfrequency.png",
+                "date": "2025-09-27T05:58:14",
+                "userTrophyNum": "3869",
+                "totalOwners": "4088",
+                "totalGameOwners": "18326",
+                "ownedPercent": "0.2111"
+            },
+            {
+                "name": "Forrest Dash",
+                "description": "Finish the game in under 4 hours with all callers surviving",
+                "game": "Killer Frequency",
+                "type": "gold",
+                "trophyImage": "../images/trophies/kf2.png",
+                "gameImage": "../images/games/killerfrequency.png",
+                "date": "2025-09-27T05:58:14",
+                "userTrophyNum": "2417",
+                "totalOwners": "4088",
+                "totalGameOwners": "18326",
+                "ownedPercent": "0.2231"
+            },
+            {
+                "name": "Killer Frequently",
+                "description": "Nobody survives The Whistling Man",
+                "game": "Killer Frequency",
+                "type": "silver",
+                "trophyImage": "../images/trophies/kf3.png",
+                "gameImage": "../images/games/killerfrequency.png",
+                "date": "2025-09-26T20:00:38",
+                "userTrophyNum": "2416",
+                "totalOwners": "4010",
+                "totalGameOwners": "18326",
+                "ownedPercent": "0.2188"
+            },
+            {
+                "name": "Not All Talk",
+                "description": "Save all Whistling Man Targets",
+                "game": "Killer Frequency",
+                "type": "gold",
+                "trophyImage": "../images/trophies/kf4.png",
+                "gameImage": "../images/games/killerfrequency.png",
+                "date": "2025-09-26T16:02:21",
+                "userTrophyNum": "2415",
+                "totalOwners": "5150",
+                "totalGameOwners": "18326",
+                "ownedPercent": "0.2810"
+            },
+            {
+                "name": "The End?",
+                "description": "Reach the end of Whistling Night",
+                "game": "Killer Frequency",
+                "type": "gold",
+                "trophyImage": "../images/trophies/kf5.png",
+                "gameImage": "../images/games/killerfrequency.png",
+                "date": "2025-09-26T16:02:21",
+                "userTrophyNum": "2414",
+                "totalOwners": "6900",
+                "totalGameOwners": "18326",
+                "ownedPercent": "0.3765"
+            },
+            {
+                "name": "Viewfound",
+                "description": "Unlock all trophies in Viewfinder",
+                "game": "Viewfinder",
+                "type": "platinum",
+                "trophyImage": "../images/trophies/kv1.png",
+                "gameImage": "../images/games/viewfinder.png",
+                "date": "2025-09-19T12:30:12",
+                "userTrophyNum": "2388",
+                "totalOwners": "2814",
+                "totalGameOwners": "7181",
+                "ownedPercent": "0.3919"
+            },
+            {
+                "name": "Hashtag all filters",
+                "description": "Collect all camera filters",
+                "game": "Viewfinder",
+                "type": "silver",
+                "trophyImage": "../images/trophies/kv2.png",
+                "gameImage": "../images/games/viewfinder.png",
+                "date": "2025-09-19T12:30:12",
+                "userTrophyNum": "2387",
+                "totalOwners": "2824",
+                "totalGameOwners": "7181",
+                "ownedPercent": "0.3933"
+            },
+            {
+                "name": "Full shutdown",
+                "description": "Complete the simulation shutdown sequence",
+                "game": "Viewfinder",
+                "type": "bronze",
+                "trophyImage": "../images/trophies/kv3.png",
+                "gameImage": "../images/games/viewfinder.png",
+                "date": "2025-09-19T12:28:51",
+                "userTrophyNum": "2386",
+                "totalOwners": "3394",
+                "totalGameOwners": "7181",
+                "ownedPercent": "0.4726"
+            },
+            {
+                "name": "Breaking wind",
+                "description": "Break the windmill inside the painting",
+                "game": "Viewfinder",
+                "type": "bronze",
+                "trophyImage": "../images/trophies/kv4.png",
+                "gameImage": "../images/games/viewfinder.png",
+                "date": "2025-09-19T12:09:07",
+                "userTrophyNum": "2385",
+                "totalOwners": "3051",
+                "totalGameOwners": "7181",
+                "ownedPercent": "0.4249"
+            },
+            {
+                "name": "Bark code",
+                "description": "Go for a walk in the barcode forest",
+                "game": "Viewfinder",
+                "type": "bronze",
+                "trophyImage": "../images/trophies/kv5.png",
+                "gameImage": "../images/games/viewfinder.png",
+                "date": "2025-09-19T11:54:48",
+                "userTrophyNum": "2384",
+                "totalOwners": "3313",
+                "totalGameOwners": "7181",
+                "ownedPercent": "0.4614"
+            }
+            
         ],
         "guides": [
 

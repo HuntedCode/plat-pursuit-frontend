@@ -29,7 +29,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const loadMore = (reset=false) => {
         if (isLoading || !hasMore) return;
         isLoading = true;
-        console.log(`Loading page ?${savedParams}`);
         const username = form.dataset.username;
 
         fetch(`/profile/${username}/games-html${savedParams}`)
@@ -57,7 +56,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     form.addEventListener('submit', (e) => {
-        console.log("submitting...");
         e.preventDefault();
         resetAndReload();
     });
