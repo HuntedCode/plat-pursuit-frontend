@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let savedParams = getParams();
 
-    const loadMore = (reset=false) => {
+    const loadMore = () => {
         if (isLoading || !hasMore) return;
         isLoading = true;
         const username = form.dataset.username;
@@ -36,15 +36,16 @@ document.addEventListener('DOMContentLoaded', () => {
             .then(data => {
                 container.innerHTML += data.html;
                 hasMore = data.hasMore;
-                if (hasMore) page++;
+                if (hasMore) {
+                    page++;
+                    savedParams = getParams();
+                }
                 isLoading = false;
             })
             .catch(err => {
                 console.error('Error loading games:', err);
                 isLoading = false;
             });
-
-        if (reset) savedParams
     };
 
     const resetAndReload = () => {

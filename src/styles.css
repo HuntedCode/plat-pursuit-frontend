@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+@theme{
+  --color-trophy-bronze: #8d4d2a;
+  --color-trophy-silver: #5f5f5f;
+  --color-trophy-gold: #927143;
+  --color-trophy-platinum: #67d1f8;
+}
+
 @plugin "daisyui"{
   themes: plat-pursuit-dark --default --prefersdark;
 };
@@ -50,5 +57,34 @@
     .font-logo {
         font-family: 'Futura', 'Inter', ui-sans-serif, system-ui, sans-serif;
     }
-
+    .card {
+      @apply shadow-lg shadow-base-300 border-2 border-base-300;
+    }
+    .card-img-container {
+      @apply border-2 border-base-300 group-hover:scale-105 group-focus-within:scale-105 hover:animate-pulse;
+    }
+    .trophy-card-bronze {
+      @apply hover:border-trophy-bronze hover:shadow-trophy-bronze focus-within:border-trophy-bronze focus-within:shadow-trophy-bronze;
+    }
+    .trophy-card-img-bronze {
+      @apply group-hover:border-trophy-bronze group-focus-within:border-trophy-bronze;
+    }
+    .trophy-card-silver {
+      @apply hover:border-trophy-silver hover:shadow-trophy-silver focus-within:border-trophy-silver focus-within:shadow-trophy-silver;
+    }
+    .trophy-card-img-silver {
+      @apply group-hover:border-trophy-silver group-focus-within:border-trophy-silver;
+    }
+    .trophy-card-gold {
+      @apply hover:border-trophy-gold hover:shadow-trophy-gold focus-within:border-trophy-gold focus-within:shadow-trophy-gold;
+    }
+    .trophy-card-img-gold {
+      @apply group-hover:border-trophy-gold group-focus-within:border-trophy-gold;
+    }
+    .trophy-card-platinum {
+      @apply hover:border-trophy-platinum hover:shadow-trophy-platinum focus-within:border-trophy-platinum focus-within:shadow-trophy-platinum;
+    }
+    .trophy-card-img-platinum {
+      @apply group-hover:border-trophy-platinum group-focus-within:border-trophy-platinum;
+    }
 }

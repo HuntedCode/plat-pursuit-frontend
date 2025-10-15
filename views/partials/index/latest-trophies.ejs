@@ -1,14 +1,14 @@
-<section class="card shadow-lg w-full bg-base-200 border-2 border-base-300 w-full transition duration-300 hover:shadow-accent hover:border-accent hover:bg-base-300 mb-8">
+<section class="card w-full bg-base-200 w-full transition duration-300 hover:shadow-accent hover:border-accent hover:bg-base-300 mb-8">
     <div class="card-body">
         <h2 class="card-title text-2xl sm:text-3xl lg:text-4xl font-bold place-self-center italic">Latest Trophies</h2>
         <div class="divider mt-0"></div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <% items.forEach(function(item) { %>
-                <div class="card bg-base-100 shadow-xl border-2 border-base-300 transition duration-300 hover:shadow-lg hover:border-primary hover:shadow-primary cursor-pointer" onclick="document.location='<%= item.slug %>'">
+                <div class="card bg-base-100 trophy-card-<%= item.type.toLowerCase() %> transition duration-300 cursor-pointer group" onclick="document.location='<%= item.slug %>'">
                     <div class="card-body flex flex-row items-center justify-between p-4 overflow-x-hidden group">
 
                         <div class="flex flex-row items-center">
-                            <figure class="flex shrink-0  rounded-lg border-2 border-base-300 mr-4 transition duration-300 group-hover:scale-105 group-hover:border-primary">
+                            <figure class="flex shrink-0 rounded-lg mr-4 transition duration-300 group-hover:scale-105 trophy-card-img-<%= item.type.toLowerCase() %>">
                                 <img src="<%= item.image %>" alt="<%= item.alt || 'Item image' %>" class="w-12 h-12 xl:w-16 xl:h-16 object-cover group-hover:scale-105" loading="lazy" />
                             </figure>
                             <div class="flex-grow space-y-1">
@@ -16,7 +16,7 @@
                                 <p class="text-xs xl:text-sm text-base-content/70 mb-2 line-clamp-2">By <a href="/" class="link link-hover text-primary"><%= item.user %></a> in <a href="/" class="link link-hover text-accent"><%= item.game %></a></p>
                                 <div>
                                     <span class="badge badge-outline badge-xs xl:badge-sm"><%= item.time %></span>
-                                    <span class="badge badge-outline <% if (item.type === 'Bronze') { %>border-[#8d4d2a]<% } else if (item.type === 'Silver') { %>border-[#5f5f5f]<% } else if (item.type === 'Gold') { %>border-[#927143]<% } else if (item.type === 'Platinum') { %>border-[#67d1f8] border-animate-ping<% } %> badge-xs xl:badge-sm"><%= item.type %></span>
+                                    <span class="badge badge-outline border-trophy-<%= item.type.toLowerCase() %> badge-xs xl:badge-sm"><%= item.type %></span>
                                 </div>
                             </div>
                         </div>

@@ -1,0 +1,5 @@
+<!-- Required for proper daisyui compiling. Don't need to include these anywhere -->
+<div class="hidden shadow-trophy-bronze border-trophy-bronze"></div>
+<div class="hidden shadow-trophy-silver border-trophy-silver"></div>
+<div class="hidden shadow-trophy-gold border-trophy-gold"></div>
+<div class="hidden shadow-trophy-platinum border-trophy-platinum"></div>
